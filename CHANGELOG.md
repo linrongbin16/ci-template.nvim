@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.1](https://github.com/linrongbin16/ci-template.nvim/compare/v1.4.0...v1.4.1) (2023-12-09)
+
+
+### Bug Fixes
+
+* **ci:** remove personal token from release-please ([733ff89](https://github.com/linrongbin16/ci-template.nvim/commit/733ff89d298ea27bfdbd4bc3b44b078679742180))
+
 ## [1.4.0](https://github.com/linrongbin16/ci-template.nvim/compare/v1.3.0...v1.4.0) (2023-12-09)
 
 
