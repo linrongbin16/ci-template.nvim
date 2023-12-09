@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.5.0](https://github.com/linrongbin16/ci-template.nvim/compare/v1.4.1...v1.5.0) (2023-12-09)
+
+
+### Features
+
+* **docs:** badges ([1db7f39](https://github.com/linrongbin16/ci-template.nvim/commit/1db7f393ca59eae83e0d86d4d9fbac218918deb3))
+* **docs:** badges ([ef6f6ef](https://github.com/linrongbin16/ci-template.nvim/commit/ef6f6efae82ec5c55fb4fad188877051d3ab0d81))
+
+
+### Bug Fixes
+
+* **docs:** fix minimal require Neovim version ([#19](https://github.com/linrongbin16/ci-template.nvim/issues/19)) ([bce58e3](https://github.com/linrongbin16/ci-template.nvim/commit/bce58e3a601db958b08abf0fbef2bd6801149194))
+
 ## [1.4.1](https://github.com/linrongbin16/ci-template.nvim/compare/v1.4.0...v1.4.1) (2023-12-09)
 
 
