@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.1](https://github.com/linrongbin16/ci-template.nvim/compare/v1.5.0...v1.5.1) (2023-12-09)
+
+
+### Performance Improvements
+
+* **codecov:** exclude json.lua file ([#20](https://github.com/linrongbin16/ci-template.nvim/issues/20)) ([e860434](https://github.com/linrongbin16/ci-template.nvim/commit/e860434f681b4fa4edf229726fbb5a76d3268cf0))
+
 ## [1.5.0](https://github.com/linrongbin16/ci-template.nvim/compare/v1.4.1...v1.5.0) (2023-12-09)
 
 
