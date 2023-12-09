@@ -1,6 +1,6 @@
 local cwd = vim.fn.getcwd()
 
-describe("actiontest", function()
+describe("ci-template", function()
   local assert_eq = assert.is_equal
   local assert_true = assert.is_true
   local assert_false = assert.is_false
@@ -11,18 +11,10 @@ describe("actiontest", function()
 
   local github_actions = os.getenv("GITHUB_ACTIONS") == "true"
 
-  local function make_default_context()
-    return {
-      bufnr = vim.api.nvim_get_current_buf(),
-      winnr = vim.api.nvim_get_current_win(),
-      tabnr = vim.api.nvim_get_current_tabpage(),
-    }
-  end
-
-  local actiontest = require("actiontest")
+  local ci_template = require("ci-template")
   describe("[setup]", function()
     it("test", function()
-      actiontest.setup()
+      ci_template.setup()
     end)
   end)
 end)
