@@ -105,7 +105,6 @@ jobs:
       - uses: google-github-actions/release-please-action@v4
         id: release
         with:
-          token: ${{ secrets.MY_PERSONAL_TOKEN }}
           release-type: simple
       - uses: actions/checkout@v4
       - uses: rickstaa/action-create-tag@v1
