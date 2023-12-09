@@ -1,4 +1,4 @@
-# actiontest.nvim
+# ci-template.nvim
 
 Warning: don't use it, it's not a plugin.
 
