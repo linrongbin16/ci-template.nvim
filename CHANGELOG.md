@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.0](https://github.com/linrongbin16/ci-template.nvim/compare/v1.0.0...v1.1.0) (2023-12-09)
+
+
+### Features
+
+* use personal token for please-release ([92ee485](https://github.com/linrongbin16/ci-template.nvim/commit/92ee4855ec842794a353ffd5b3f343dd02a689fb))
+* use personal token for please-release ([bfd498a](https://github.com/linrongbin16/ci-template.nvim/commit/bfd498aab95bcda96214327e590b737a553fdcf4))
+
 ## 1.0.0 (2023-12-09)
 
 
