@@ -1,0 +1,4 @@
+modules = {
+    ["ci-template"] = "lua/ci-template.lua",
+    ["ci-template.*"] = "lua",
+}
