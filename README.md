@@ -11,7 +11,9 @@
 CI template for Neovim plugin project.
 </i></p>
 
-It does following actions:
+It requires [CodeCov](https://about.codecov.io/) and [LuaRocks](https://luarocks.org/) token for uploading codecov report and luarocks package.
+
+It does the following actions:
 
 For PR branch:
 
@@ -19,7 +21,7 @@ For PR branch:
 2. luacheck
 3. luals annotations typecheck
 4. stylua code format
-5. download and install json.lua
+5. download and install json.lua as an embed json library (for low-version Neovim).
 6. run vusted (busted) unit tests
 
 Additionally for main branch:
