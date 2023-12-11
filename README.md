@@ -21,7 +21,7 @@ For PR branch:
 2. luacheck
 3. luals annotations typecheck
 4. stylua code format
-5. download and install json.lua
+5. download and install json.lua as an embed json library (for low-version Neovim).
 6. run vusted (busted) unit tests
 
 Additionally for main branch:
