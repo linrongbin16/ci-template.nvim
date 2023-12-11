@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.3](https://github.com/linrongbin16/ci-template.nvim/compare/v1.5.2...v1.5.3) (2023-12-11)
+
+
+### Performance Improvements
+
+* **docs:** add development ([#26](https://github.com/linrongbin16/ci-template.nvim/issues/26)) ([e99aae2](https://github.com/linrongbin16/ci-template.nvim/commit/e99aae254f369428fb0365f281b212297751cc61))
+
 ## [1.5.2](https://github.com/linrongbin16/ci-template.nvim/compare/v1.5.1...v1.5.2) (2023-12-11)
 
 
