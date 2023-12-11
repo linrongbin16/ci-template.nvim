@@ -11,7 +11,9 @@
 CI template for Neovim plugin project.
 </i></p>
 
-It does following actions:
+It requires CodeCov and LuaRocks token for uploading codecov report and luarocks package.
+
+It does the following actions:
 
 For PR branch:
 
