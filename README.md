@@ -79,8 +79,8 @@ It provides 4 badges for README.md:
 
 Setup the plugin development with:
 
-- [lua-language-server](https://github.com/LuaLS/lua-language-server).
-- [stylua](https://github.com/JohnnyMorganz/StyLua).
-- [luacheck](https://github.com/lunarmodules/luacheck).
-- [luarocks](https://luarocks.org/).
-- [vusted](https://github.com/notomo/vusted).
+- [lua-language-server](https://github.com/LuaLS/lua-language-server): language server.
+- [stylua](https://github.com/JohnnyMorganz/StyLua): code format.
+- [luacheck](https://github.com/lunarmodules/luacheck): code static check.
+- [luarocks](https://luarocks.org/): dependency of vusted/busted/luacov.
+- [vusted](https://github.com/notomo/vusted): unit test.
