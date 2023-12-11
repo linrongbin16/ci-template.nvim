@@ -36,9 +36,9 @@ Additionally for main branch:
 
 ## Documents
 
-It provide 4 badges for README.md:
+It provides 4 badges for README.md:
 
 1. Minimal required Neovim version.
-1. Uploaded LuaRocks package version.
+1. LuaRocks package version.
 1. GitHub CI running status.
-1. CodeCov code coverage.
+1. Code coverage.
