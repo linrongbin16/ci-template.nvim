@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.4](https://github.com/linrongbin16/ci-template.nvim/compare/v1.5.3...v1.5.4) (2023-12-11)
+
+
+### Performance Improvements
+
+* **exrc:** add indent size for project local options ([#28](https://github.com/linrongbin16/ci-template.nvim/issues/28)) ([852dadb](https://github.com/linrongbin16/ci-template.nvim/commit/852dadb2d78e08e3cca43b3ab551802bb8f81a25))
+
 ## [1.5.3](https://github.com/linrongbin16/ci-template.nvim/compare/v1.5.2...v1.5.3) (2023-12-11)
 
 
