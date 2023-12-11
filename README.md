@@ -11,6 +11,15 @@
 CI template for Neovim plugin project.
 </i></p>
 
+## Table of Contents
+
+- [Requirements](#requirements)
+- [Actions](#actions)
+- [Documents](#documents)
+- [Usage](#usage)
+  - [Initialize](#initialize)
+  - [Development](#development)
+
 ## Requirements
 
 - [CodeCov](https://about.codecov.io/) token: upload CodeCov report.
@@ -45,6 +54,8 @@ It provides 4 badges for README.md:
 
 ## Usage
 
+### Initialize
+
 1. Copy this project to your newly created Neovim plugin project.
    - **Note**: I'm not sure if you can completely remove the `CHANGELOG.md` file from git history if create new project via the **_Use this template_** button.
 2. Remove the [CHANGELOG.md](https://github.com/linrongbin16/ci-template.nvim/blob/8ba994d7a64c52bb3a4a046068a510f54219aacd/CHANGELOG.md?plain=1#L1), it's only for **_this_** project, you don't want it.
@@ -62,3 +73,13 @@ It provides 4 badges for README.md:
 6. Update the indent size (by default 2) with your project configs in below files:
    - `.editorconfig`: [indent_size](https://github.com/linrongbin16/ci-template.nvim/blob/7de9e40f84d53d9d07d3206e4979347a942cbd30/.editorconfig?plain=1#L7).
    - `.stylua.toml`: [indent_size](https://github.com/linrongbin16/ci-template.nvim/blob/792fcc25184f0ac3f20c2037ed6a4ae48f4c28d3/.stylua.toml?plain=1#L4).
+
+### Development
+
+Setup the plugin development environment with:
+
+- [lua-language-server](https://github.com/LuaLS/lua-language-server).
+- [stylua](https://github.com/JohnnyMorganz/StyLua).
+- [luacheck](https://github.com/lunarmodules/luacheck).
+- [luarocks](https://luarocks.org/).
+- [vusted](https://github.com/notomo/vusted).
