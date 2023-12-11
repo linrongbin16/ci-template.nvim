@@ -27,16 +27,16 @@ For PR branch:
 3. LuaLs annotations typecheck
 4. stylua code format
 5. download and install json.lua as an embed json library (for low-version Neovim).
-6. run vusted (busted) unit tests
+6. run vusted (busted) unit tests for 3 version of Neovim: minimal required (0.7+), stable and nightly.
 
 Additionally for main branch:
 
 1. release-please
 2. upload luarocks package (only for created tags)
 
-## Docs
+## Documents
 
-It provide 4 badges for project README.md:
+It provide 4 badges for README.md:
 
 1. Minimal required Neovim version.
 1. Uploaded LuaRocks package version.
