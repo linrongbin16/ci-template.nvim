@@ -51,7 +51,9 @@ It provides 4 badges for README.md:
 3. Replace the word `linrongbin16` with your name in below files:
    - `README.md`: [badges](https://github.com/linrongbin16/ci-template.nvim/blob/9313f7927b133abe342ee4fa1758fb438c6a9c57/README.md?plain=1#L4-L7).
    - `LICENSE`: [copyright](https://github.com/linrongbin16/ci-template.nvim/blob/9313f7927b133abe342ee4fa1758fb438c6a9c57/LICENSE?plain=1#L3).
+   - `ci.yml`: [luarocks](https://github.com/linrongbin16/ci-template.nvim/blob/d4a39cecc5384884d2c1d9d205d3503ab266ec21/.github/workflows/ci.yml?plain=1#L122).
 4. Replace the word `ci-template` with your plugin name in below files:
+   - `ci.yml`: [luarocks](https://github.com/linrongbin16/ci-template.nvim/blob/d4a39cecc5384884d2c1d9d205d3503ab266ec21/.github/workflows/ci.yml?plain=1#L122).
    - `.luacov`: [modules](https://github.com/linrongbin16/ci-template.nvim/blob/792fcc25184f0ac3f20c2037ed6a4ae48f4c28d3/.luacov?plain=1#L2-L3).
    - [ci-template.lua](https://github.com/linrongbin16/ci-template.nvim/blob/203b21999ccd1e43a7e3d5d26e690ff75aeee403/lua/ci-template.lua?plain=1#L1): replace the file name with your plugin name.
    - [ci_template_spec.lua](https://github.com/linrongbin16/ci-template.nvim/blob/203b21999ccd1e43a7e3d5d26e690ff75aeee403/test/ci_template_spec.lua?plain=1#L1): replace the file name with relate lua module name.
