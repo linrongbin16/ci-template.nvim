@@ -24,7 +24,7 @@ For PR branch:
 
 1. conventional PR commits check
 2. luacheck
-3. luals annotations typecheck
+3. LuaLs annotations typecheck
 4. stylua code format
 5. download and install json.lua as an embed json library (for low-version Neovim).
 6. run vusted (busted) unit tests
