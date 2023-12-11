@@ -77,7 +77,7 @@ It provides 4 badges for README.md:
 
 ### Development
 
-Setup the plugin development environment with:
+Setup the plugin development with:
 
 - [lua-language-server](https://github.com/LuaLS/lua-language-server).
 - [stylua](https://github.com/JohnnyMorganz/StyLua).
