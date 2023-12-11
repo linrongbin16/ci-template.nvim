@@ -42,3 +42,15 @@ It provides 4 badges for README.md:
 1. LuaRocks package version.
 1. GitHub CI running status.
 1. Code coverage.
+
+## Usage
+
+1. Copy this project to your newly created Neovim plugin project.
+2. Remove the `CHANGELOG.md`, it's only for **_this_** project, you don't want it.
+   - **Note**: I'm not sure if you can completely remove `CHANGELOG.md` file from git commits via create new project via the **_Use this template_** button.
+3. Replace the word `linrongbin16` with your name in below files:
+   - `README.md`: [badges](https://github.com/linrongbin16/ci-template.nvim/blob/9313f7927b133abe342ee4fa1758fb438c6a9c57/README.md?plain=1#L4-L7).
+   - `LICENSE`: [copyright](https://github.com/linrongbin16/ci-template.nvim/blob/9313f7927b133abe342ee4fa1758fb438c6a9c57/LICENSE?plain=1#L3).
+4. Replace the word `ci-template` with your name in below files:
+   - `README.md`
+   - `LICENSE`
