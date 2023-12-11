@@ -74,7 +74,7 @@ It provides 4 badges for README.md:
 7. Reset the indent size (by default 2):
    - `.editorconfig`: [indent_size](https://github.com/linrongbin16/ci-template.nvim/blob/7de9e40f84d53d9d07d3206e4979347a942cbd30/.editorconfig?plain=1#L7).
    - `.stylua.toml`: [indent_size](https://github.com/linrongbin16/ci-template.nvim/blob/792fcc25184f0ac3f20c2037ed6a4ae48f4c28d3/.stylua.toml?plain=1#L4).
-   - `.nvim.lua` (optional if you enabled `exrc`): [indent_size](https://github.com/linrongbin16/ci-template.nvim/blob/792fcc25184f0ac3f20c2037ed6a4ae48f4c28d3/.stylua.toml?plain=1#L4).
+   - `.nvim.lua` (optional if you enabled `exrc`): [shiftwidth](https://github.com/linrongbin16/ci-template.nvim/blob/b752ecd228a2a3307123315f22bee97bf8760544/.nvim.lua?plain=1#L1-L3).
 
 ### Development
 
