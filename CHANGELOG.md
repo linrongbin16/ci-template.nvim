@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.5.5](https://github.com/linrongbin16/ci-template.nvim/compare/v1.5.4...v1.5.5) (2023-12-11)
+
+
+### Bug Fixes
+
+* **docs:** typing ([#31](https://github.com/linrongbin16/ci-template.nvim/issues/31)) ([e875d30](https://github.com/linrongbin16/ci-template.nvim/commit/e875d3065a5ef294818302b8d8d32ea99e1e0c57))
+
+
+### Performance Improvements
+
+* **docs:** squash and merge PRs ([#33](https://github.com/linrongbin16/ci-template.nvim/issues/33)) ([46f3103](https://github.com/linrongbin16/ci-template.nvim/commit/46f310397e53b91620e49da4348a59132469470f))
+* **docs:** use template ([#30](https://github.com/linrongbin16/ci-template.nvim/issues/30)) ([122fe28](https://github.com/linrongbin16/ci-template.nvim/commit/122fe2810fd770b04d855f51bd11784f67421523))
+
 ## [1.5.4](https://github.com/linrongbin16/ci-template.nvim/compare/v1.5.3...v1.5.4) (2023-12-11)
 
 
