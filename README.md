@@ -56,8 +56,7 @@ It provides 4 badges for README.md:
 
 ### Initialize
 
-1. Copy this project (exclude the `.git`) to your Neovim plugin project.
-   - **Note**: I'm not sure if you can completely remove the `CHANGELOG.md` file from git history if create new project via the **_Use this template_** button.
+1. Manually copy this project (exclude the `.git` folder) to your Neovim plugin project, or just click the **_Use this template_** (in the top right).
 2. Remove the [CHANGELOG.md](https://github.com/linrongbin16/ci-template.nvim/blob/8ba994d7a64c52bb3a4a046068a510f54219aacd/CHANGELOG.md?plain=1#L1) (it's only for **_this_** project, you don't want it).
 3. Replace the word `linrongbin16`:
    - `README.md`: [badges](https://github.com/linrongbin16/ci-template.nvim/blob/9313f7927b133abe342ee4fa1758fb438c6a9c57/README.md?plain=1#L4-L7).
