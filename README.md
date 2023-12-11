@@ -40,7 +40,7 @@ For PR branch:
 
 Additionally for main branch:
 
-1. release-please.
+1. release-please (highly recommend [Squash and merge commits](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/about-pull-request-merges#squash-and-merge-your-commits) when merge PRs).
 2. upload luarocks package (only for created tags).
 
 ## Documents
