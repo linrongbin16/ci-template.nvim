@@ -1,5 +1,21 @@
 # Changelog
 
+## [3.0.0](https://github.com/linrongbin16/ci-template.nvim/compare/v2.0.0...v3.0.0) (2023-12-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* **ci:** revert to mono ci ([#40](https://github.com/linrongbin16/ci-template.nvim/issues/40))
+
+### Bug Fixes
+
+* **release:** use personal access token ([#37](https://github.com/linrongbin16/ci-template.nvim/issues/37)) ([337922b](https://github.com/linrongbin16/ci-template.nvim/commit/337922b15c0c62193ea214ebf907fb8050e571e0))
+
+
+### Reverts
+
+* **ci:** revert to mono ci ([#40](https://github.com/linrongbin16/ci-template.nvim/issues/40)) ([43a1eea](https://github.com/linrongbin16/ci-template.nvim/commit/43a1eeaed3be4734c1f35d9002798da60e90936f))
+
 ## [2.0.1](https://github.com/linrongbin16/ci-template.nvim/compare/v2.0.0...v2.0.1) (2023-12-12)
 
 
