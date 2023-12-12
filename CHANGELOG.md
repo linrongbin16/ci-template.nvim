@@ -1,5 +1,21 @@
 # Changelog
 
+## [2.0.0](https://github.com/linrongbin16/ci-template.nvim/compare/v1.5.5...v2.0.0) (2023-12-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* **actions:** require personal access token
+
+### Features
+
+* **actions:** require personal access token ([0389583](https://github.com/linrongbin16/ci-template.nvim/commit/0389583827fa49fb07f6d5f8e9604b56d0cf24c8))
+
+
+### Performance Improvements
+
+* **actions:** add release.yml ([#35](https://github.com/linrongbin16/ci-template.nvim/issues/35)) ([0389583](https://github.com/linrongbin16/ci-template.nvim/commit/0389583827fa49fb07f6d5f8e9604b56d0cf24c8))
+
 ## [1.5.5](https://github.com/linrongbin16/ci-template.nvim/compare/v1.5.4...v1.5.5) (2023-12-11)
 
 
