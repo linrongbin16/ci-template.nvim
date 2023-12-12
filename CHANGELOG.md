@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.1](https://github.com/linrongbin16/ci-template.nvim/compare/v3.0.0...v3.0.1) (2023-12-12)
+
+
+### Bug Fixes
+
+* **luarocks:** only upload when tags created ([#42](https://github.com/linrongbin16/ci-template.nvim/issues/42)) ([1f297d1](https://github.com/linrongbin16/ci-template.nvim/commit/1f297d12e97f381eb48ca0b7c1809580df15957c))
+
 ## [3.0.0](https://github.com/linrongbin16/ci-template.nvim/compare/v2.0.0...v3.0.0) (2023-12-12)
 
 
