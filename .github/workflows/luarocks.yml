@@ -1,18 +1,20 @@
-name: LuaRocks release
+name: LuaRocks
 on:
   push:
-    tags: # Will upload to luarocks.org when a tag is pushed
+    tags:
       - "*"
-  pull_request: # Will test a local install without uploading to luarocks.org
-
 jobs:
-  luarocks-release:
+  upload-luarocks:
     runs-on: ubuntu-latest
-    name: LuaRocks upload
+    name: Upload LuaRocks
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: LuaRocks Upload
-        uses: nvim-neorocks/luarocks-tag-release@v5
+      - uses: actions/checkout@v4
+      - uses: nvim-neorocks/luarocks-tag-release@v5
         env:
           LUAROCKS_API_KEY: ${{ secrets.LUAROCKS_API_KEY }}
+        with:
+          name: linrongbin16-ci-template.nvim
+          version: ${{ steps.release.outputs.tag_name }}
+          labels: |
+            neovim
+            vim
