@@ -25,7 +25,7 @@ CI template for Neovim plugin project.
 - [CodeCov](https://about.codecov.io/) token: upload CodeCov report.
 - [LuaRocks](https://luarocks.org/) API token: upload LuaRocks package.
 - [Personal Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) with ***Contents*** and ***Pull requests*** permissions: run release-please action.
-  - Also see: [GitHub Credentials - release-please](https://github.com/google-github-actions/release-please-action?tab=readme-ov-file#github-credentials).
+  > Note: please see [GitHub Credentials - release-please](https://github.com/google-github-actions/release-please-action?tab=readme-ov-file#github-credentials).
 
 ## Actions
 
