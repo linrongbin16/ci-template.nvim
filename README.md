@@ -63,9 +63,9 @@ It provides 4 badges for README.md:
    - `LICENSE`: [user name](https://github.com/linrongbin16/ci-template.nvim/blob/9313f7927b133abe342ee4fa1758fb438c6a9c57/LICENSE?plain=1#L3).
    - `ci.yml`: [luarocks package](https://github.com/linrongbin16/ci-template.nvim/blob/d4a39cecc5384884d2c1d9d205d3503ab266ec21/.github/workflows/ci.yml?plain=1#L122).
 4. Replace the word `ci-template`:
-   - `ci.yml`: [luarocks package](https://github.com/linrongbin16/ci-template.nvim/blob/d4a39cecc5384884d2c1d9d205d3503ab266ec21/.github/workflows/ci.yml?plain=1#L122).
+   - `ci.yml`: [luarocks package](https://github.com/linrongbin16/ci-template.nvim/blob/d4a39cecc5384884d2c1d9d205d3503ab266ec21/.github/workflows/ci.yml?plain=1#L122), [package name](https://github.com/linrongbin16/ci-template.nvim/blob/9210da5ee798a140ed6fe126bcc3a367c8b1f996/.github/workflows/ci.yml#L106).
    - `.luacov`: [lua modules](https://github.com/linrongbin16/ci-template.nvim/blob/792fcc25184f0ac3f20c2037ed6a4ae48f4c28d3/.luacov?plain=1#L2-L3).
-5. Rename the file name:
+5. Rename the files:
    - [ci-template.lua](https://github.com/linrongbin16/ci-template.nvim/blob/203b21999ccd1e43a7e3d5d26e690ff75aeee403/lua/ci-template.lua).
    - [ci_template_spec.lua](https://github.com/linrongbin16/ci-template.nvim/blob/203b21999ccd1e43a7e3d5d26e690ff75aeee403/test/ci_template_spec.lua).
 6. Reset the version:
