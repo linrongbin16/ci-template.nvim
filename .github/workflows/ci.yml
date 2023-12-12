@@ -96,8 +96,11 @@ jobs:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
   release:
     name: Release
-    runs-on: ubuntu-latest
     if: ${{ github.ref == 'refs/heads/main' }}
+    needs:
+      - luacheck
+      - unit_test
+    runs-on: ubuntu-latest
     steps:
       - uses: google-github-actions/release-please-action@v3
         id: release
@@ -121,4 +124,4 @@ jobs:
           version: ${{ steps.release.outputs.tag_name }}
           labels: |
             neovim
-            vim 
+            vim
