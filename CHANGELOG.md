@@ -1,5 +1,17 @@
 # Changelog
 
+## [3.0.2](https://github.com/linrongbin16/ci-template.nvim/compare/v3.0.1...v3.0.2) (2023-12-12)
+
+
+### Bug Fixes
+
+* **ci:** revert ci ([#44](https://github.com/linrongbin16/ci-template.nvim/issues/44)) ([0b4bb46](https://github.com/linrongbin16/ci-template.nvim/commit/0b4bb46c69e68ea27565d611433bee924ca232c3))
+
+
+### Performance Improvements
+
+* **ci:** remove legacy from fzfx.nvim ([0b4bb46](https://github.com/linrongbin16/ci-template.nvim/commit/0b4bb46c69e68ea27565d611433bee924ca232c3))
+
 ## [3.0.1](https://github.com/linrongbin16/ci-template.nvim/compare/v3.0.0...v3.0.1) (2023-12-12)
 
 
