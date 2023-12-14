@@ -38,14 +38,6 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           version: latest
           args: --config-path .stylua.toml ./lua ./test
-      - name: Add json.lua
-        if: ${{ github.ref != 'refs/heads/main' }}
-        shell: bash
-        run: |
-          echo "pwd"
-          echo $PWD
-          git clone --depth=1 https://github.com/actboy168/json.lua.git ~/.json.lua
-          cp ~/.json.lua/json.lua ./lua/actboy168_json.lua
       - uses: stefanzweifel/git-auto-commit-action@v4
         if: ${{ github.ref != 'refs/heads/main' }}
         with:
