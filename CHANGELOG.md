@@ -1,5 +1,18 @@
 # Changelog
 
+## [4.0.0](https://github.com/linrongbin16/ci-template.nvim/compare/v3.0.2...v4.0.0) (2023-12-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* **json:** remove embedded actboy16/json.lua ([#48](https://github.com/linrongbin16/ci-template.nvim/issues/48))
+* **actions:** drop json install, now have commons ([#46](https://github.com/linrongbin16/ci-template.nvim/issues/46))
+
+### Performance Improvements
+
+* **actions:** drop json install, now have commons ([#46](https://github.com/linrongbin16/ci-template.nvim/issues/46)) ([107db18](https://github.com/linrongbin16/ci-template.nvim/commit/107db181e1a60ad50b8e03251ec2f35533ac7593))
+* **json:** remove embedded actboy16/json.lua ([#48](https://github.com/linrongbin16/ci-template.nvim/issues/48)) ([b0df923](https://github.com/linrongbin16/ci-template.nvim/commit/b0df923898e3f43b1388da50fb405532441ae86c))
+
 ## [3.0.2](https://github.com/linrongbin16/ci-template.nvim/compare/v3.0.1...v3.0.2) (2023-12-12)
 
 
