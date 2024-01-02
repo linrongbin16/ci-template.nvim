@@ -20,7 +20,7 @@ jobs:
         with:
           task_types: '["feat","fix","docs","test","ci","refactor","perf","chore","revert","break"]'
   luacheck:
-    name: Lua check
+    name: Lua Check
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -59,7 +59,7 @@ jobs:
         with:
           luaVersion: "luajit-2.1.0-beta3"
       - uses: leafo/gh-actions-luarocks@v4
-      - name: Run test cases
+      - name: Run Test Cases
         shell: bash
         run: |
           luarocks install luacheck
@@ -67,7 +67,7 @@ jobs:
           luarocks install cluacov
           luarocks install vusted
           vusted --coverage --shuffle ./test
-      - name: Generate coverage reports
+      - name: Generate Coverage Reports
         shell: bash
         run: |
           echo "ls ."
