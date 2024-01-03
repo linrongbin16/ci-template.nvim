@@ -1,5 +1,17 @@
 # Changelog
 
+## [4.1.0](https://github.com/linrongbin16/ci-template.nvim/compare/v4.0.0...v4.1.0) (2024-01-03)
+
+
+### Features
+
+* **test:** running test cases in macos/windows ([#51](https://github.com/linrongbin16/ci-template.nvim/issues/51)) ([f51b688](https://github.com/linrongbin16/ci-template.nvim/commit/f51b6882e2e72a3c63c34d67539820f6f987629a))
+
+
+### Performance Improvements
+
+* **ci:** update name ([#49](https://github.com/linrongbin16/ci-template.nvim/issues/49)) ([cff0118](https://github.com/linrongbin16/ci-template.nvim/commit/cff0118185eae633add424da66a5d5045933b9a1))
+
 ## [4.0.0](https://github.com/linrongbin16/ci-template.nvim/compare/v3.0.2...v4.0.0) (2023-12-14)
 
 
