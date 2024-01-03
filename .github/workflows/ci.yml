@@ -42,12 +42,32 @@ jobs:
         if: ${{ github.ref != 'refs/heads/main' }}
         with:
           commit_message: "chore(pr): auto-commit"
+  windows_unit_test:
+    name: Windows Unit Test
+    strategy:
+      matrix:
+        nvim_version: [stable]
+        os: [windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: notomo/action-setup-nvim-lua@v1
+      - uses: rhysd/action-setup-vim@v1
+        id: vim
+        with:
+          neovim: true
+          version: ${{ matrix.nvim_version }}
+      - name: Run Test Cases
+        run: |
+          luarocks --lua-version=5.1 install vusted
+          vusted ./test
   unit_test:
     name: Unit Test
     strategy:
       matrix:
         nvim_version: [stable, nightly, v0.7.0]
-    runs-on: ubuntu-latest
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
       - uses: rhysd/action-setup-vim@v1
@@ -55,17 +75,20 @@ jobs:
         with:
           neovim: true
           version: ${{ matrix.nvim_version }}
-      - uses: leafo/gh-actions-lua@v10
+      - uses: actions/checkout@v4
+      - uses: notomo/action-setup-nvim-lua@v1
+      - uses: rhysd/action-setup-vim@v1
+        id: vim
         with:
-          luaVersion: "luajit-2.1.0-beta3"
-      - uses: leafo/gh-actions-luarocks@v4
+          neovim: true
+          version: ${{ matrix.nvim_version }}
       - name: Run Test Cases
         shell: bash
         run: |
           luarocks install luacheck
           luarocks install luacov
           luarocks install cluacov
-          luarocks install vusted
+          luarocks --lua-version=5.1 install vusted
           vusted --coverage --shuffle ./test
       - name: Generate Coverage Reports
         shell: bash
