@@ -70,12 +70,6 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
-      - uses: rhysd/action-setup-vim@v1
-        id: vim
-        with:
-          neovim: true
-          version: ${{ matrix.nvim_version }}
-      - uses: actions/checkout@v4
       - uses: notomo/action-setup-nvim-lua@v1
       - uses: rhysd/action-setup-vim@v1
         id: vim
