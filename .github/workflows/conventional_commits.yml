@@ -1,0 +1,21 @@
+name: Conventional Commits
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+concurrency:
+  group: ${{ github.ref }}-${{ github.workflow }}
+  cancel-in-progress: true
+jobs:
+  conventional_commit:
+    name: Conventional Commits
+    if: ${{ github.ref != 'refs/heads/main' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ytanikin/PRConventionalCommits@1.1.0
+        with:
+          task_types: '["feat","fix","docs","test","ci","refactor","perf","chore","revert","break"]'
