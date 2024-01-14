@@ -27,11 +27,9 @@ CI template for Neovim plugin project.
 
 ## Actions
 
-It runs the following actions:
-
 For PR branch:
 
-1. conventional PR commits check.
+1. [Conventional Commits Check](hsdh).
 2. luacheck.
 3. LuaLs annotations typecheck.
 4. stylua code format.
