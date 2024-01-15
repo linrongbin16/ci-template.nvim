@@ -81,8 +81,9 @@ def setup(debug_opt, org_opt, repo_opt, required_opt, indent_opt):
     )
 
     # remove CHANGELOG.md
-    with JobLogger("remove CHANGELOG.md"):
-        os.remove("CHANGELOG.md")
+    if os.path.exists("CHANGELOG.md"):
+        with JobLogger("remove CHANGELOG.md"):
+            os.remove("CHANGELOG.md")
 
     # clear README.md
     with JobLogger("update README.md"):
