@@ -26,6 +26,8 @@ if [[ -z "$REPO" ]]; then
 	exit 1
 fi
 
+REPO="${REPO/.nvim/}"
+
 info "remove CHANGELOG.md"
 rm CHANGELOG.md
 info "remove CHANGELOG.md - done"
