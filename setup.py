@@ -66,8 +66,18 @@ def setup(debug_opt, org_opt, repo_opt, required_opt, indent_opt):
     repo = repo_nvim[:-5] if repo_nvim.endswith(".nvim") else repo_nvim
     repo_underscore = repo.replace("-", "_")
     indent = int(indent_opt)
+    assert isinstance(required_opt, str)
+    required_version = (
+        f"{required_opt}.0" if required_opt.count(".") == 1 else required_opt
+    )
+    required_version = (
+        f"v{required_version}"
+        if not required_version.startswith("v")
+        else required_version
+    )
+    required_version_short = required_version[:-2]
     logging.debug(
-        f"org:{org}, repo_nvim:{repo_nvim}, repo:{repo}, repo_underscore:{repo_underscore}, indent:{indent}"
+            f"org:{org}, repo_nvim:{repo_nvim}, repo:{repo}, repo_underscore:{repo_underscore}, indent:{indent}, required_version:{required_version}, required_version_short:{required_version_short}"
     )
 
     # remove CHANGELOG.md
@@ -78,6 +88,13 @@ def setup(debug_opt, org_opt, repo_opt, required_opt, indent_opt):
     with JobLogger("update README.md"):
         with open("README.md", "w") as fp:
             fp.write(f"# {repo_nvim}\n")
+            fp.write("\n")
+            fp.write('<p align="center">')
+            fp.write(f'<a href="https://github.com/neovim/neovim/releases/{required_version}"><img alt="Neovim" src="https://img.shields.io/badge/Neovim-{required_version_short}+-57A143?logo=neovim&logoColor=57A143" /></a>')
+            fp.write(f'<a href="https://luarocks.org/modules/{org}/{repo_nvim}"><img alt="luarocks" src="https://custom-icon-badges.demolab.com/luarocks/v/{org}/{repo_nvim}?label=LuaRocks&labelColor=063B70&logo=tag&logoColor=fff&color=blue" /></a>')
+            fp.write(f'<a href="https://github.com/{org}/{repo_nvim}/actions/workflows/test.yml"><img alt="test.yml" src="https://img.shields.io/github/actions/workflow/status/{org}/{repo_nvim}/test.yml?label=GitHub%20CI&labelColor=181717&logo=github&logoColor=fff" /></a>')
+            fp.write(f'<a href="https://app.codecov.io/github/{org}/{repo_nvim}"><img alt="codecov" src="https://img.shields.io/codecov/c/github/{org}/{repo_nvim}?logo=codecov&logoColor=F01F7A&label=Codecov" /></a>')
+</p>
 
     # update LICENSE
     with JobLogger("update LICENSE"):
@@ -89,15 +106,6 @@ def setup(debug_opt, org_opt, repo_opt, required_opt, indent_opt):
         for action_file in os.listdir(".github/workflows"):
             replace_file(f".github/workflows/{action_file}", "linrongbin16", org)
             replace_file(f".github/workflows/{action_file}", "ci-template", org)
-            assert isinstance(required_opt, str)
-            required_version = (
-                f"{required_opt}.0" if required_opt.count(".") == 1 else required_opt
-            )
-            required_version = (
-                f"v{required_version}"
-                if not required_version.startswith("v")
-                else required_version
-            )
             replace_file(f".github/workflows/{action_file}", "v0.7.0", required_version)
 
     # update .luacov
