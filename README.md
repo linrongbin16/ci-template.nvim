@@ -45,7 +45,8 @@ Additionally for main branch:
 ### Initialize
 
 1. Click the **_Use this template_** button (in the top right) to create new Neovim plugin project.
-2. Clone the repository to local and run `./setup.py` with below arguments:
+2. Clone the repository to local.
+3. Run `./setup.py` with below arguments:
    - `${ORG}`: organization.
    - `${REPO}`: repository.
    - (Optional) `${INDENT}`: indent size, by default is `2`.
