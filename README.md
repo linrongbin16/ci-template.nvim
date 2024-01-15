@@ -83,15 +83,15 @@ Additionally for main/master branch:
 
 ### Development
 
-Setup the development environment with:
+Setup development environment with:
 
 - [lua-language-server](https://github.com/LuaLS/lua-language-server): for lua programming.
 - [stylua](https://github.com/JohnnyMorganz/StyLua): code format.
 - [luacheck](https://github.com/lunarmodules/luacheck): code static check.
 - [luarocks](https://luarocks.org/): for vusted/busted/luacov installation.
 
-Please setup unit test with:
+Setup unit test with:
 
-- [vusted](https://github.com/notomo/vusted): unit test.
+- [vusted](https://github.com/notomo/vusted).
 
 Then run test cases with `vusted ./spec`.
