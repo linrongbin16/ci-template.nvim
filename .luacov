@@ -2,3 +2,8 @@ modules = {
     ["ci-template"] = "lua/ci-template.lua",
     ["ci-template.*"] = "lua",
 }
+
+exclude = {
+  "lua/excluded_file.lua",
+  "lua/excluded_dir/*.lua",
+}
