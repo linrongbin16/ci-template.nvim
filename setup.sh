@@ -72,16 +72,15 @@ info "replace 'ci-template' to '$REPO' in .luacov"
 sed -i -e "s#ci-template#$REPO#g" spec/ci_template_spec.lua
 info "replace 'ci-template' to '$REPO' in .luacov - done"
 
-REPO_SPEC="${REPO/-/_}"
-info "replace 'ci_template' to '$REPO_SPEC' in spec/ci_template_spec.lua"
-sed -i "s#ci_template#$REPO_SPEC#g" spec/ci_template_spec.lua
-info "replace 'ci_template' to '$REPO_SPEC' in spec/ci_template_spec.lua - done"
+REPO_UNDERSCORE="${REPO/-/_}"
+info "replace 'ci_template' to '$REPO_UNDERSCORE' in spec/ci_template_spec.lua"
+sed -i "s#ci_template#$REPO_UNDERSCORE#g" spec/ci_template_spec.lua
+info "replace 'ci_template' to '$REPO_UNDERSCORE' in spec/ci_template_spec.lua - done"
 
-REPO_SPEC_LUA="spec/${REPO}_spec.lua"
-REPO_SPEC_LUA="${REPO_SPEC_LUA/-/_}"
-info "rename lua/ci_template_spec.lua to '$REPO_SPEC_LUA'"
-mv spec/ci_template_spec.lua $REPO_SPEC_LUA
-info "rename lua/ci_template_spec.lua to '$REPO_SPEC_LUA' - done"
+REPO_SPEC="spec/${REPO_UNDERSCORE}_spec.lua"
+info "rename lua/ci_template_spec.lua to '$REPO_SPEC'"
+mv spec/ci_template_spec.lua $REPO_SPEC
+info "rename lua/ci_template_spec.lua to '$REPO_SPEC' - done"
 
 info "clear version.txt"
 echo '' >version.txt
