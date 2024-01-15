@@ -9,7 +9,9 @@ import click
 def init_logging(level: int) -> None:
     assert isinstance(level, int)
     logging.basicConfig(
-        format="%(asctime)s %(levelname)s [%(filename)s:%(lineno)d](%(funcName)s) - %(message)s",
+        format="%(asctime)s %(levelname)s [%(filename)s:%(lineno)d](%(funcName)s) - %(message)s"
+        if level <= logging.DEBUG
+        else "%(asctime)s %(levelname)s - %(message)s",
         level=level,
         handlers=[logging.StreamHandler()],
     )
