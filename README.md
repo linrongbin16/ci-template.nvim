@@ -45,14 +45,14 @@ Additionally for main branch:
 ### Initialize
 
 1. Click the **_Use this template_** button (in the top right) to create new Neovim plugin project.
-2. Clone the repository to local and run `./setup.sh ${ORG} ${REPO}` with below arguments:
+2. Clone the repository to local and run `./setup.py` with below arguments:
    - `${ORG}`: organization.
    - `${REPO}`: repository.
    - (Optional) `${INDENT}`: indent size, by default is `2`.
 
 > [!NOTE]
 >
-> The `setup.sh` script is actually doing below steps:
+> The `setup.py` script is actually doing below steps:
 >
 > 1. Remove the [CHANGELOG.md](https://github.com/linrongbin16/ci-template.nvim/blob/8ba994d7a64c52bb3a4a046068a510f54219aacd/CHANGELOG.md?plain=1#L1) (it's only for **_this_** project, you don't want it).
 > 2. Replace the `linrongbin16` and `ci-template` (and `ci-template.nvim`) to provided `${ORG}` and `${REPO}` in below files:
