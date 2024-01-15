@@ -37,11 +37,11 @@ echo "# $REPO" >README.md
 info "clear README.md - done"
 
 info "replace 'linrongbin16' to '$ORG' in LICENSE"
-sed -i "s/linrongbin16/$ORG/" LICENSE
+sed "s/linrongbin16/""$ORG""/g" LICENSE >LICENSE
 info "replace 'linrongbin16' to '$ORG' in LICENSE - done"
 
 info "replace 'ci-template.nvim' to '$REPO' in LICENSE"
-sed -i "s/ci-template.nvim/$REPO/" LICENSE
+sed "s/ci-template.nvim/""$REPO""/g" LICENSE >LICENSE
 info "replace 'ci-template.nvim' to '$REPO' in LICENSE - done"
 
 info "replace 'linrongbin16' to '$ORG' in .github/workflows"
@@ -92,7 +92,7 @@ if [[ -z "$INDENT" ]]; then
 fi
 
 info "replace indent size to '$INDENT'"
-sed -i "/^indent_size/ s/2/$INDENT/" .editorconfig
-sed -i "/^indent_width/ s/2/$INDENT/" .stylua.toml
-sed -i "s/2/$INDENT/" .nvim.lua
+sed -i "/^indent_size/ s/2/$INDENT/g" .editorconfig
+sed -i "/^indent_width/ s/2/$INDENT/g" .stylua.toml
+sed -i "s/2/$INDENT/g" .nvim.lua
 info "replace indent size to '$INDENT' - done"
