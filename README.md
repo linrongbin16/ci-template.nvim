@@ -92,4 +92,4 @@ Please setup unit test with:
 
 - [vusted](https://github.com/notomo/vusted): unit test.
 
-Then run test cases with `vusted./spec`.
+Then run test cases with `vusted ./spec`.
