@@ -63,10 +63,7 @@ Additionally for main/master branch:
 > 2. Update below files with provided `${ORG}` and `${REPO}`:
 >    - `README.md`.
 >    - `LICENSE`.
->    - `github/workflows`:
->      - `lint.yml`.
->      - `release.yml`.
->      - `test.yml`.
+>    - Action files in `github/workflows`.
 >    - `.luacov`.
 > 3. Rename below files:
 >    - `lua/ci-template.lua` to `lua/${REPO}.lua` (`.nvim` suffix is been removed if exists).
@@ -79,7 +76,7 @@ Additionally for main/master branch:
 >    - `.stylua.toml`.
 >    - `.nvim.lua`.
 > 6. (Optional) update minimal required Neovim version in below files:
->    - `github/workflows/test.yml`.
+>    - Action files in `github/workflows`.
 
 ### Development
 
