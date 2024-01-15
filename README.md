@@ -15,7 +15,6 @@ CI template for Neovim plugin project.
 
 - [Requirements](#requirements)
 - [Actions](#actions)
-- [Documents](#documents)
 - [Usage](#usage)
   - [Initialize](#initialize)
   - [Development](#development)
@@ -29,25 +28,17 @@ CI template for Neovim plugin project.
 
 For PR branch:
 
-1. [Conventional Commits Check](https://github.com/linrongbin16/ci-template.nvim/blob/d7054ed195ca72ca138f6f6e1f5656677110bc16/.github/workflows/lint.yml?plain=1#L15).
+1. [Conventional commits check](https://github.com/linrongbin16/ci-template.nvim/blob/d7054ed195ca72ca138f6f6e1f5656677110bc16/.github/workflows/lint.yml?plain=1#L15).
 2. [Luacheck](https://github.com/linrongbin16/ci-template.nvim/blob/d7054ed195ca72ca138f6f6e1f5656677110bc16/.github/workflows/lint.yml?plain=1#L24).
-3. [Type Check](https://github.com/linrongbin16/ci-template.nvim/blob/d7054ed195ca72ca138f6f6e1f5656677110bc16/.github/workflows/lint.yml?plain=1#L29) by lua-language-server annotations.
-4. [Stylua Code Format](https://github.com/linrongbin16/ci-template.nvim/blob/d7054ed195ca72ca138f6f6e1f5656677110bc16/.github/workflows/lint.yml?plain=1#L38).
-5. run vusted (busted) unit tests for 3 version of Neovim: minimal required (0.7+), stable and nightly.
+3. [Type check](https://github.com/linrongbin16/ci-template.nvim/blob/d7054ed195ca72ca138f6f6e1f5656677110bc16/.github/workflows/lint.yml?plain=1#L29) by lua-language-server annotations.
+4. [Code format](https://github.com/linrongbin16/ci-template.nvim/blob/d7054ed195ca72ca138f6f6e1f5656677110bc16/.github/workflows/lint.yml?plain=1#L38) by stylua.
+5. [Run unit tests](https://github.com/linrongbin16/ci-template.nvim/blob/1520f234f2a9b78509b8fe13d684d29c7a0174e8/.github/workflows/test.yml?plain=1#L15) for both [Windows](https://github.com/linrongbin16/ci-template.nvim/blob/1520f234f2a9b78509b8fe13d684d29c7a0174e8/.github/workflows/test.yml?plain=1#L15) and [Unix/Linux](https://github.com/linrongbin16/ci-template.nvim/blob/1520f234f2a9b78509b8fe13d684d29c7a0174e8/.github/workflows/test.yml?plain=1#L34), for multiple Neovim versions from [lowest to nightly](https://github.com/linrongbin16/ci-template.nvim/blob/1520f234f2a9b78509b8fe13d684d29c7a0174e8/.github/workflows/test.yml?plain=1#L38).
 
 Additionally for main branch:
 
-1. release-please (highly recommend [squash and merge commits](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/about-pull-request-merges#squash-and-merge-your-commits) when merge PRs).
-2. upload luarocks package (only for created tags).
-
-## Documents
-
-It provides 4 badges for README.md:
-
-1. Minimal required Neovim version.
-1. LuaRocks package version.
-1. GitHub CI running status.
-1. Code coverage.
+1. [Release](https://github.com/linrongbin16/ci-template.nvim/blob/1520f234f2a9b78509b8fe13d684d29c7a0174e8/.github/workflows/release.yml?plain=1#L20) on main/master branch push.
+2. [Create tag](https://github.com/linrongbin16/ci-template.nvim/blob/1520f234f2a9b78509b8fe13d684d29c7a0174e8/.github/workflows/release.yml?plain=1#L26).
+3. [Upload LuaRocks rocks](https://github.com/linrongbin16/ci-template.nvim/blob/1520f234f2a9b78509b8fe13d684d29c7a0174e8/.github/workflows/release.yml?plain=1#L33).
 
 ## Usage
 
@@ -76,8 +67,8 @@ It provides 4 badges for README.md:
 
 Setup the plugin development with:
 
-- [lua-language-server](https://github.com/LuaLS/lua-language-server): language server.
+- [lua-language-server](https://github.com/LuaLS/lua-language-server): for lua programming.
 - [stylua](https://github.com/JohnnyMorganz/StyLua): code format.
 - [luacheck](https://github.com/lunarmodules/luacheck): code static check.
-- [luarocks](https://luarocks.org/): package management for vusted/busted/luacov.
+- [luarocks](https://luarocks.org/): for vusted/busted/luacov installation.
 - [vusted](https://github.com/notomo/vusted): unit test.
