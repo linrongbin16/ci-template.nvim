@@ -80,8 +80,8 @@ def setup(debug_opt, org_opt, repo_opt, indent_opt):
     # update .github/workflows
     with JobLogger("update .github/workflows"):
         for action_file in os.listdir(".github/workflows"):
-            replace_file(action_file, "linrongbin16", org)
-            replace_file(action_file, "ci-template", org)
+            replace_file(f".github/workflows/{action_file}", "linrongbin16", org)
+            replace_file(f".github/workflows/{action_file}", "ci-template", org)
 
     # update .luacov
     with JobLogger("update .luacov"):
