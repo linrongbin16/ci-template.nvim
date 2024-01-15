@@ -14,26 +14,26 @@ err() {
 }
 
 ORG="$1"
-REPO="$2"
+REPO_NVIM="$2"
 INDENT="$3"
 
 if [[ -z "$ORG" ]]; then
 	err "missing 'ORG' parameter, exit..."
 	exit 1
 fi
-if [[ -z "$REPO" ]]; then
-	err "missing 'REPO' parameter, exit..."
+if [[ -z "$REPO_NVIM" ]]; then
+	err "missing 'REPO_NVIM' parameter, exit..."
 	exit 1
 fi
 
-REPO="${REPO/.nvim/}"
+REPO="${REPO_NVIM/.nvim/}"
 
 info "remove CHANGELOG.md"
 rm CHANGELOG.md
 info "remove CHANGELOG.md - done"
 
 info "clear README.md"
-echo "# $REPO" >README.md
+echo "# $REPO_NVIM" >README.md
 info "clear README.md - done"
 
 info "replace 'linrongbin16' to '$ORG' in LICENSE"
@@ -41,9 +41,9 @@ sed -i -e "s#linrongbin16#$ORG#g" LICENSE
 mv .tmp.LICENSE LICENSE
 info "replace 'linrongbin16' to '$ORG' in LICENSE - done"
 
-info "replace 'ci-template.nvim' to '$REPO' in LICENSE"
-sed -i -e "s#ci-template.nvim#$REPO#g" LICENSE
-info "replace 'ci-template.nvim' to '$REPO' in LICENSE - done"
+info "replace 'ci-template.nvim' to '$REPO_NVIM' in LICENSE"
+sed -i -e "s#ci-template.nvim#$REPO_NVIM#g" LICENSE
+info "replace 'ci-template.nvim' to '$REPO_NVIM' in LICENSE - done"
 
 info "replace 'linrongbin16' to '$ORG' in .github/workflows"
 sed -i -e "s#linrongbin16#$ORG#g" .github/workflows/lint.yml
@@ -51,11 +51,11 @@ sed -i -e "s#linrongbin16#$ORG#g" .github/workflows/release.yml
 sed -i -e "s#linrongbin16#$ORG#g" .github/workflows/test.yml
 info "replace 'linrongbin16' to '$ORG' in .github/workflows - done"
 
-info "replace 'ci-template.nvim' to '$REPO' in .github/workflows"
-sed -i -e "s#ci-template.nvim#$REPO#g" .github/workflows/lint.yml
-sed -i -e "s#ci-template.nvim#$REPO#g" .github/workflows/release.yml
-sed -i -e "s#ci-template.nvim#$REPO#g" .github/workflows/test.yml
-info "replace 'ci-template.nvim' to '$REPO' in .github/workflows - done"
+info "replace 'ci-template.nvim' to '$REPO_NVIM' in .github/workflows"
+sed -i -e "s#ci-template.nvim#$REPO_NVIM#g" .github/workflows/lint.yml
+sed -i -e "s#ci-template.nvim#$REPO_NVIM#g" .github/workflows/release.yml
+sed -i -e "s#ci-template.nvim#$REPO_NVIM#g" .github/workflows/test.yml
+info "replace 'ci-template.nvim' to '$REPO_NVIM' in .github/workflows - done"
 
 info "replace 'linrongbin16' to '$ORG' in .luacov"
 sed -i -e "s#linrongbin16#$ORG#g" .luacov
