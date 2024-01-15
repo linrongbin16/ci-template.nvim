@@ -30,9 +30,9 @@ CI template for Neovim plugin project.
 
 For PR branch:
 
-1. [Conventional commits check](https://github.com/linrongbin16/ci-template.nvim/blob/d7054ed195ca72ca138f6f6e1f5656677110bc16/.github/workflows/lint.yml?plain=1#L15).
-2. [Luacheck](https://github.com/linrongbin16/ci-template.nvim/blob/d7054ed195ca72ca138f6f6e1f5656677110bc16/.github/workflows/lint.yml?plain=1#L24).
-3. [Type check](https://github.com/linrongbin16/ci-template.nvim/blob/d7054ed195ca72ca138f6f6e1f5656677110bc16/.github/workflows/lint.yml?plain=1#L29) by lua-language-server annotations.
+1. [Conventional commits check](https://github.com/linrongbin16/ci-template.nvim/blob/a12dc1f0434955325bf54820d35da737adfa46ec/.github/workflows/ci.yml?plain=1#L15).
+2. [Type check](https://github.com/linrongbin16/ci-template.nvim/blob/a12dc1f0434955325bf54820d35da737adfa46ec/.github/workflows/ci.yml?plain=1#L29) by lua-language-server.
+3. [Static check](https://github.com/linrongbin16/ci-template.nvim/blob/a12dc1f0434955325bf54820d35da737adfa46ec/.github/workflows/ci.yml?plain=1#L35) by luacheck.
 4. [Code format](https://github.com/linrongbin16/ci-template.nvim/blob/d7054ed195ca72ca138f6f6e1f5656677110bc16/.github/workflows/lint.yml?plain=1#L38) by stylua.
 5. [Run unit tests](https://github.com/linrongbin16/ci-template.nvim/blob/1520f234f2a9b78509b8fe13d684d29c7a0174e8/.github/workflows/test.yml?plain=1#L15) for both [Windows](https://github.com/linrongbin16/ci-template.nvim/blob/1520f234f2a9b78509b8fe13d684d29c7a0174e8/.github/workflows/test.yml?plain=1#L15) and [Unix/Linux](https://github.com/linrongbin16/ci-template.nvim/blob/1520f234f2a9b78509b8fe13d684d29c7a0174e8/.github/workflows/test.yml?plain=1#L34), for multiple Neovim versions from [lowest to nightly](https://github.com/linrongbin16/ci-template.nvim/blob/1520f234f2a9b78509b8fe13d684d29c7a0174e8/.github/workflows/test.yml?plain=1#L38).
 6. [Upload code coverage](https://github.com/linrongbin16/ci-template.nvim/blob/93a666c874a440e6835a74f3d22931e8e70a9719/.github/workflows/coverage.yml?plain=1#L15).
