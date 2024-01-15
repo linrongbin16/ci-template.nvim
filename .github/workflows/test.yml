@@ -1,4 +1,4 @@
-name: UnitTest
+name: Unit Test
 on:
   pull_request:
     branches:
@@ -13,7 +13,7 @@ concurrency:
   cancel-in-progress: true
 jobs:
   windows_unit_test:
-    name: Windows Unit Test
+    name: Windows Tests
     strategy:
       matrix:
         nvim_version: [stable]
@@ -32,7 +32,7 @@ jobs:
           luarocks --lua-version=5.1 install vusted
           vusted ./spec
   unix_unit_test:
-    name: Unix Unit Test
+    name: Unix Tests
     strategy:
       matrix:
         nvim_version: [stable, nightly, v0.7.0]
