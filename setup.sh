@@ -37,11 +37,13 @@ echo "# $REPO" >README.md
 info "clear README.md - done"
 
 info "replace 'linrongbin16' to '$ORG' in LICENSE"
-sed "s/linrongbin16/""$ORG""/g" LICENSE >LICENSE
+sed "s/linrongbin16/""$ORG""/g" LICENSE >.tmp.LICENSE
+mv .tmp.LICENSE LICENSE
 info "replace 'linrongbin16' to '$ORG' in LICENSE - done"
 
 info "replace 'ci-template.nvim' to '$REPO' in LICENSE"
-sed "s/ci-template.nvim/""$REPO""/g" LICENSE >LICENSE
+sed "s/ci-template.nvim/""$REPO""/g" LICENSE >.tmp.LICENSE
+mv .tmp.LICENSE LICENSE
 info "replace 'ci-template.nvim' to '$REPO' in LICENSE - done"
 
 info "replace 'linrongbin16' to '$ORG' in .github/workflows"
