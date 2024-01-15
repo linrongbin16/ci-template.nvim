@@ -38,7 +38,6 @@ info "clear README.md - done"
 
 info "replace 'linrongbin16' to '$ORG' in LICENSE"
 sed -i -e "s#linrongbin16#$ORG#g" LICENSE
-mv .tmp.LICENSE LICENSE
 info "replace 'linrongbin16' to '$ORG' in LICENSE - done"
 
 info "replace 'ci-template.nvim' to '$REPO_NVIM' in LICENSE"
