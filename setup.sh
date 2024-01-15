@@ -59,11 +59,16 @@ info "rename lua/ci-template.lua to lua/$REPO"
 mv lua/ci-template.lua lua/$REPO.lua
 info "rename lua/ci-template.lua to lua/$REPO - done"
 
-info "replace linrongbin16/ci-template.nvim to $ORG/$REPO in .luacov"
-sed -i "s/linrongbin16/$ORG/g" .luacov
-sed -i "s/ci-template.nvim/$REPO/g" .luacov
-info "replace linrongbin16/ci-template.nvim to $ORG/$REPO in .luacov - done"
+info "replace 'ci-template' to '$REPO' in .luacov"
+sed -i "s/ci-template/$REPO/g" spec/ci_template_spec.lua
+info "replace 'ci-template' to '$REPO' in .luacov - done"
 
-info "rename spec/ci_template_spec.lua to lua/$REPO"
-mv lua/ci-template.lua lua/$REPO.lua
-info "rename lua/ci-template.lua to lua/$REPO - done"
+REPO_SPEC="spec/${REPO}_spec.lua"
+REPO_SPEC="${REPO_SPEC/-/_}"
+info "rename lua/ci_template_spec.lua to '$REPO_SPEC'"
+mv spec/ci_template_spec.lua $REPO_SPEC
+info "rename lua/ci_template_spec.lua to '$REPO_SPEC' - done"
+
+info "clear version.txt"
+echo '' >version.txt
+info "clear version.txt - done"
