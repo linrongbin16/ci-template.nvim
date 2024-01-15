@@ -81,7 +81,7 @@ Additionally for main branch:
 
 ### Development
 
-Setup the plugin development with:
+Setup the development environment with:
 
 - [lua-language-server](https://github.com/LuaLS/lua-language-server): for lua programming.
 - [stylua](https://github.com/JohnnyMorganz/StyLua): code format.
