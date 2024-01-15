@@ -45,43 +45,51 @@ Additionally for main branch:
 
 ### Initialize
 
-1. Click the **_Use this template_** button (in the top right) to create new Neovim plugin project.
+1. Click the **_"Use this template"_** button (in the top right) to create new Neovim plugin project.
 2. Clone the repository to local.
 3. Run `./setup.py` with below arguments:
    - `${ORG}`: organization.
    - `${REPO}`: repository.
    - (Optional) `${INDENT}`: indent size, by default is `2`.
+   - (Optional) `${REQUIRED_VERSION}`: minimal required nvim version, by default is `0.7`.
 
 > [!NOTE]
 >
 > The `setup.py` script is actually doing below steps:
 >
 > 1. Remove the [CHANGELOG.md](https://github.com/linrongbin16/ci-template.nvim/blob/8ba994d7a64c52bb3a4a046068a510f54219aacd/CHANGELOG.md?plain=1#L1) (it's only for **_this_** project, you don't want it).
-> 2. Replace the `linrongbin16` and `ci-template` (and `ci-template.nvim`) to provided `${ORG}` and `${REPO}` in below files:
+> 2. Update below files with provided `${ORG}` and `${REPO}`:
+>    - `README.md`.
 >    - `LICENSE`.
 >    - `github/workflows`:
 >      - `lint.yml`.
 >      - `release.yml`.
 >      - `test.yml`.
 >    - `.luacov`.
-> 3. Rename below files:
+> 4. Rename below files:
 >    - `lua/ci-template.lua` to `lua/${REPO}.lua` (`.nvim` suffix is been removed if exists).
 >    - `spec/ci_template_spec.lua` to `spec/${REPO}_spec.lua` (`.nvim` suffix is been removed if exists).
-> 4. Reset below files:
->    - `README.md`.
+> 5. Reset below files:
 >    - `CHANGELOG.md`.
 >    - `version.txt`.
-> 5. (Optional) reset the indent size (only when `${INDENT}` is been provided) in below files:
+> 6. (Optional) reset the indent size (only when `${INDENT}` is been provided) in below files:
 >    - `.editorconfig`.
 >    - `.stylua.toml`.
 >    - `.nvim.lua`.
+> 7. (Optional) update minimal required Neovim version in below files:
+>    - `github/workflows/test.yml`.
 
 ### Development
 
-Setup the plugin development with:
+Setup the development environment with:
 
 - [lua-language-server](https://github.com/LuaLS/lua-language-server): for lua programming.
 - [stylua](https://github.com/JohnnyMorganz/StyLua): code format.
 - [luacheck](https://github.com/lunarmodules/luacheck): code static check.
 - [luarocks](https://luarocks.org/): for vusted/busted/luacov installation.
+
+Please setup unit test with:
+
 - [vusted](https://github.com/notomo/vusted): unit test.
+
+Then run test cases with `vusted ./spec`.
