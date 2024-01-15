@@ -50,9 +50,11 @@ def replace_file(filename, old, new):
     "--required-version",
     "required_opt",
     default="0.7",
-    help="required nvim version",
+    help="required nvim version, by default is `0.7`",
 )
-@click.option("--indent-size", "indent_opt", default=2, help="indent size")
+@click.option(
+    "--indent-size", "indent_opt", default=2, help="indent size, by default is `2`"
+)
 def setup(debug_opt, org_opt, repo_opt, required_opt, indent_opt):
     init_logging(logging.DEBUG if debug_opt else logging.INFO)
     logging.debug(
