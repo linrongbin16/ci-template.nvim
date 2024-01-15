@@ -46,11 +46,17 @@ def replace_file(filename, old, new):
 )
 @click.option("-o", "--org", "org_opt", required=True, help="organization")
 @click.option("-r", "--repo", "repo_opt", required=True, help="repository")
-@click.option("-i", "--indent", "indent_opt", default=2, help="indent size")
-def setup(debug_opt, org_opt, repo_opt, indent_opt):
+@click.option(
+    "--required-version",
+    "required_opt",
+    default="0.7",
+    help="required nvim version",
+)
+@click.option("--indent-size", "indent_opt", default=2, help="indent size")
+def setup(debug_opt, org_opt, repo_opt, required_opt, indent_opt):
     init_logging(logging.DEBUG if debug_opt else logging.INFO)
     logging.debug(
-        f"debug_opt:{debug_opt}, org_opt:{org_opt}, repo_opt:{repo_opt}, indent_opt:{indent_opt}"
+        f"debug_opt:{debug_opt}, org_opt:{org_opt}, repo_opt:{repo_opt}, required_opt:{required_opt}, indent_opt:{indent_opt}"
     )
 
     org = org_opt
@@ -82,6 +88,16 @@ def setup(debug_opt, org_opt, repo_opt, indent_opt):
         for action_file in os.listdir(".github/workflows"):
             replace_file(f".github/workflows/{action_file}", "linrongbin16", org)
             replace_file(f".github/workflows/{action_file}", "ci-template", org)
+            assert isinstance(required_opt, str)
+            required_version = (
+                f"{required_opt}.0" if required_opt.count(".") == 1 else required_opt
+            )
+            required_version = (
+                f"v{required_version}"
+                if not required_version.startswith("v")
+                else required_version
+            )
+            replace_file(f".github/workflows/{action_file}", "v0.7.0", required_version)
 
     # update .luacov
     with JobLogger("update .luacov"):
