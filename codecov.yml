@@ -7,4 +7,5 @@ coverage:
       default:
         threshold: 90%
 ignore:
-  - "lua/actboy168_json.lua"
+  - "lua/exclude_file.lua"
+  - "lua/exclude_dir/*.lua"

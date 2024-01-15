@@ -4,5 +4,6 @@ modules = {
 }
 
 exclude = {
-    "lua/actboy168_json.lua",
+  "lua/excluded_file.lua",
+  "lua/excluded_dir/*.lua",
 }

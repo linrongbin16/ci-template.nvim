@@ -9,7 +9,7 @@ describe("ci-template", function()
     vim.api.nvim_command("cd " .. cwd)
   end)
 
-  local github_actions = os.getenv("GITHUB_ACTIONS") == "true"
+  local GITHUB_ACTIONS = os.getenv("GITHUB_ACTIONS") == "true"
 
   local ci_template = require("ci-template")
   describe("[setup]", function()
