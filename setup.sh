@@ -32,13 +32,17 @@ info "remove CHANGELOG.md"
 rm CHANGELOG.md
 info "remove CHANGELOG.md - done"
 
-info "replace 'linrongbin16' to '$ORG' in README.md"
-sed -i "s/linrongbin16/$ORG/g" README.md
-info "replace 'linrongbin16' to '$ORG' in README.md - done"
+info "clear README.md"
+echo "# $REPO" >README.md
+info "clear README.md - done"
 
-info "replace 'ci-template.nvim' to '$REPO' in README.md"
-sed -i "s/ci-template.nvim/$REPO/g" README.md
-info "replace 'ci-template.nvim' to '$REPO' in README.md - done"
+info "replace 'linrongbin16' to '$ORG' in LICENSE"
+sed -i "s/linrongbin16/$ORG/g" LICENSE
+info "replace 'linrongbin16' to '$ORG' in LICENSE - done"
+
+info "replace 'ci-template.nvim' to '$REPO' in LICENSE"
+sed -i "s/ci-template.nvim/$REPO/g" LICENSE
+info "replace 'ci-template.nvim' to '$REPO' in LICENSE - done"
 
 info "replace 'linrongbin16' to '$ORG' in .github/workflows"
 sed -i "s/linrongbin16/$ORG/g" .github/workflows/lint.yml
