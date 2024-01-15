@@ -1,5 +1,13 @@
 # Changelog
 
+## [4.2.1](https://github.com/linrongbin16/ci-template.nvim/compare/v4.2.0...v4.2.1) (2024-01-15)
+
+
+### Performance Improvements
+
+* **ci:** merge multiple action files into single file ([#61](https://github.com/linrongbin16/ci-template.nvim/issues/61)) ([047c68e](https://github.com/linrongbin16/ci-template.nvim/commit/047c68e5d9754293732b8692ab23fd1cddc0c37e))
+* **setup:** don't remove setup.py ([#62](https://github.com/linrongbin16/ci-template.nvim/issues/62)) ([3a56683](https://github.com/linrongbin16/ci-template.nvim/commit/3a56683bb7a5c1637cc7728397ffb7177b78cc6c))
+
 ## [4.2.0](https://github.com/linrongbin16/ci-template.nvim/compare/v4.1.0...v4.2.0) (2024-01-15)
 
 
