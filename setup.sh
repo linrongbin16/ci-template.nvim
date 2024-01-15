@@ -15,6 +15,7 @@ err() {
 
 ORG="$1"
 REPO="$2"
+INDENT="$3"
 
 if [[ -z "$ORG" ]]; then
 	err "missing 'ORG' parameter, exit..."
@@ -72,3 +73,11 @@ info "rename lua/ci_template_spec.lua to '$REPO_SPEC' - done"
 info "clear version.txt"
 echo '' >version.txt
 info "clear version.txt - done"
+
+if [[ ! -z "$INDENT" ]]; then
+	info "replace indent size to '$INDENT'"
+	sed -i "s/indent_size = 2/indent_size = $INDENT/g" .editorconfig
+	sed -i "s/indent_width = 2/indent_width = $INDENT/g" .stylua.toml
+	sed -i "s/2/$INDENT/g" .nvim.lua
+	info "replace indent size to '$INDENT' - done"
+fi
