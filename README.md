@@ -60,7 +60,7 @@ Additionally for main/master branch:
 > The `setup.py` script is actually doing below steps:
 >
 > 1. Remove the [CHANGELOG.md](https://github.com/linrongbin16/ci-template.nvim/blob/8ba994d7a64c52bb3a4a046068a510f54219aacd/CHANGELOG.md?plain=1#L1) (it's only for **_this_** project, you don't want it).
-> 2. Update below files with provided `${ORG}` and `${REPO}`:
+> 2. Update below files with provided `${ORG}`, `${REPO}` (and optional `${REQUIRED_VERSION}`):
 >    - `README.md`.
 >    - `LICENSE`.
 >    - Action files in `github/workflows`.
@@ -75,8 +75,6 @@ Additionally for main/master branch:
 >    - `.editorconfig`.
 >    - `.stylua.toml`.
 >    - `.nvim.lua`.
-> 6. (Optional) update minimal required Neovim version in below files:
->    - Action files in `github/workflows`.
 
 ### Development
 
