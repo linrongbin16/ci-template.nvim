@@ -80,13 +80,14 @@ Additionally for main/master branch:
 
 Setup development environment with:
 
-- [lua-language-server](https://github.com/LuaLS/lua-language-server): for lua programming.
-- [stylua](https://github.com/JohnnyMorganz/StyLua): code format.
-- [luacheck](https://github.com/lunarmodules/luacheck): code static check.
-- [luarocks](https://luarocks.org/): for vusted/busted/luacov installation.
+- [lua-language-server](https://github.com/LuaLS/lua-language-server): Lua programming.
+- [stylua](https://github.com/JohnnyMorganz/StyLua): Code format.
+- [luacheck](https://github.com/lunarmodules/luacheck): Static check.
+- [luarocks](https://luarocks.org/): Lua package manager.
+- [vusted](https://github.com/notomo/vusted): Neovim wrapper on `busted`. 
 
-Setup unit test with:
+Run test cases with:
 
-- [vusted](https://github.com/notomo/vusted).
-
-Then run test cases with `vusted ./spec`.
+```bash
+vusted ./spec
+```
