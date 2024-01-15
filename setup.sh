@@ -27,12 +27,43 @@ info "remove CHANGELOG.md"
 rm CHANGELOG.md
 info "remove CHANGELOG.md - done"
 
-info "replace linrongbin16/ci-template.nvim to $ORG/$REPO in README.md"
+info "replace 'linrongbin16' to '$ORG' in README.md"
 sed -i "s/linrongbin16/$ORG/g" README.md
-sed -i "s/ci-template.nvim/$REPO/g" README.md
-info "replace linrongbin16/ci-template.nvim to $ORG/$REPO in README.md - done"
+info "replace 'linrongbin16' to '$ORG' in README.md - done"
 
-info "replace linrongbin16/ci-template.nvim to $ORG/$REPO in LICENSE"
-sed -i "s/linrongbin16/$ORG/g" README.md
+info "replace 'ci-template.nvim' to '$REPO' in README.md"
 sed -i "s/ci-template.nvim/$REPO/g" README.md
-info "replace linrongbin16/ci-template.nvim to $ORG/$REPO in LICENSE - done"
+info "replace 'ci-template.nvim' to '$REPO' in README.md - done"
+
+info "replace 'linrongbin16' to '$ORG' in .github/workflows"
+sed -i "s/linrongbin16/$ORG/g" .github/workflows/lint.yml
+sed -i "s/linrongbin16/$ORG/g" .github/workflows/release.yml
+sed -i "s/linrongbin16/$ORG/g" .github/workflows/test.yml
+info "replace 'linrongbin16' to '$ORG' in .github/workflows - done"
+
+info "replace 'ci-template.nvim' to '$REPO' in .github/workflows"
+sed -i "s/ci-template.nvim/$REPO/g" .github/workflows/lint.yml
+sed -i "s/ci-template.nvim/$REPO/g" .github/workflows/release.yml
+sed -i "s/ci-template.nvim/$REPO/g" .github/workflows/test.yml
+info "replace 'ci-template.nvim' to '$REPO' in .github/workflows - done"
+
+info "replace 'linrongbin16' to '$ORG' in .luacov"
+sed -i "s/linrongbin16/$ORG/g" .luacov
+info "replace 'linrongbin16' to '$ORG' in .luacov - done"
+
+info "replace 'ci-template' to '$ORG' in .luacov"
+sed -i "s/ci-template/$REPO/g" .luacov
+info "replace 'ci-template' to '$ORG' in .luacov - done"
+
+info "rename lua/ci-template.lua to lua/$REPO"
+mv lua/ci-template.lua lua/$REPO.lua
+info "rename lua/ci-template.lua to lua/$REPO - done"
+
+info "replace linrongbin16/ci-template.nvim to $ORG/$REPO in .luacov"
+sed -i "s/linrongbin16/$ORG/g" .luacov
+sed -i "s/ci-template.nvim/$REPO/g" .luacov
+info "replace linrongbin16/ci-template.nvim to $ORG/$REPO in .luacov - done"
+
+info "rename spec/ci_template_spec.lua to lua/$REPO"
+mv lua/ci-template.lua lua/$REPO.lua
+info "rename lua/ci-template.lua to lua/$REPO - done"
