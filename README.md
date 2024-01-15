@@ -29,7 +29,7 @@ CI template for Neovim plugin project.
 
 For PR branch:
 
-1. [Conventional Commits Check]().
+1. [Conventional Commits Check](https://github.com/linrongbin16/ci-template.nvim/blob/main/.github/workflows/lint.yml).
 2. luacheck.
 3. LuaLs annotations typecheck.
 4. stylua code format.
