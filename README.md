@@ -84,7 +84,7 @@ Setup development environment with:
 - [stylua](https://github.com/JohnnyMorganz/StyLua): Code format.
 - [luacheck](https://github.com/lunarmodules/luacheck): Static check.
 - [luarocks](https://luarocks.org/): Lua package manager.
-- [vusted](https://github.com/notomo/vusted): A wrapper on `busted` to run unit tests with Neovim. 
+- [vusted](https://github.com/notomo/vusted): Neovim wrapper on `busted`. 
 
 Run test cases with:
 
