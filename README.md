@@ -59,19 +59,18 @@ Additionally for main/master branch:
 >
 > The `setup.py` script is actually doing below steps:
 >
-> 1. Remove the [CHANGELOG.md](https://github.com/linrongbin16/ci-template.nvim/blob/8ba994d7a64c52bb3a4a046068a510f54219aacd/CHANGELOG.md?plain=1#L1) (it's only for **_this_** project, you don't want it).
-> 2. Update below files with provided `${ORG}`, `${REPO}` (and optional `${REQUIRED_VERSION}`):
->    - `README.md`.
+> 1. Update below files with provided `{ORG}`, `{REPO}` (and optional `{REQUIRED_VERSION}`):
 >    - `LICENSE`.
 >    - Action files in `github/workflows`.
 >    - `.luacov`.
-> 3. Rename below files:
->    - `lua/ci-template.lua` to `lua/${REPO}.lua` (`.nvim` suffix is been removed if exists).
->    - `spec/ci_template_spec.lua` to `spec/${REPO}_spec.lua` (`.nvim` suffix is been removed if exists).
-> 4. Reset below files:
+> 2. Rename below files:
+>    - `lua/ci-template.lua` to `lua/{REPO}.lua` (`.nvim` suffix is been removed if exists).
+>    - `spec/ci_template_spec.lua` to `spec/{REPO}_spec.lua` (`.nvim` suffix is been removed if exists).
+> 3. Reset below files:
+>    - `README.md`.
 >    - `CHANGELOG.md`.
 >    - `version.txt`.
-> 5. (Optional) reset the indent size (only when `${INDENT}` is been provided) in below files:
+> 4. (Optional) reset the indent size (only when `{INDENT_SIZE}` is been provided) in below files:
 >    - `.editorconfig`.
 >    - `.stylua.toml`.
 >    - `.nvim.lua`.
