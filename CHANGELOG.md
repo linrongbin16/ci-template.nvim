@@ -1,5 +1,22 @@
 # Changelog
 
+## [4.2.0](https://github.com/linrongbin16/ci-template.nvim/compare/v4.1.0...v4.2.0) (2024-01-15)
+
+
+### Features
+
+* **ci:** add `setup.py` to initialize project ([#53](https://github.com/linrongbin16/ci-template.nvim/issues/53)) ([a1bc494](https://github.com/linrongbin16/ci-template.nvim/commit/a1bc494d14834becbe44fd0b77e73d2dd1868e03))
+
+
+### Bug Fixes
+
+* **ci:** fix PR/default branch detect ([#57](https://github.com/linrongbin16/ci-template.nvim/issues/57)) ([5ef298c](https://github.com/linrongbin16/ci-template.nvim/commit/5ef298c7fc57ea7e80adb16a3100b56a4a8bb5d7))
+
+
+### Performance Improvements
+
+* **ci:** split code coverage into separated action ([#58](https://github.com/linrongbin16/ci-template.nvim/issues/58)) ([a0d4ad6](https://github.com/linrongbin16/ci-template.nvim/commit/a0d4ad6a999a148ce7b6f2e0dc4581ad0e7a0413))
+
 ## [4.1.0](https://github.com/linrongbin16/ci-template.nvim/compare/v4.0.0...v4.1.0) (2024-01-03)
 
 
