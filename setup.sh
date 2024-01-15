@@ -19,9 +19,11 @@ INDENT="$3"
 
 if [[ -z "$ORG" ]]; then
 	err "missing 'ORG' parameter, exit..."
+	exit 1
 fi
 if [[ -z "$REPO" ]]; then
 	err "missing 'REPO' parameter, exit..."
+	exit 1
 fi
 
 info "remove CHANGELOG.md"
@@ -74,10 +76,12 @@ info "clear version.txt"
 echo '' >version.txt
 info "clear version.txt - done"
 
-if [[ ! -z "$INDENT" ]]; then
-	info "replace indent size to '$INDENT'"
-	sed -i "s/indent_size = 2/indent_size = $INDENT/g" .editorconfig
-	sed -i "s/indent_width = 2/indent_width = $INDENT/g" .stylua.toml
-	sed -i "s/2/$INDENT/g" .nvim.lua
-	info "replace indent size to '$INDENT' - done"
+if [[ -z "$INDENT" ]]; then
+	exit 0
 fi
+
+info "replace indent size to '$INDENT'"
+sed -i "s/indent_size = 2/indent_size = $INDENT/g" .editorconfig
+sed -i "s/indent_width = 2/indent_width = $INDENT/g" .stylua.toml
+sed -i "s/2/$INDENT/g" .nvim.lua
+info "replace indent size to '$INDENT' - done"
