@@ -49,11 +49,12 @@ Additionally for main/master branch:
 
 1. Click the **_"Use this template"_** button (in the top right) to create new Neovim plugin project.
 2. Clone the repository to local.
-3. Run `./setup.py` with below arguments:
+3. Run `setup.py` with below arguments:
    - `--org`: organization.
    - `--repo`: repository.
    - (Optional) `--indent-size`: indent size, by default is `2`.
    - (Optional) `--required-version`: minimal required nvim version, by default is `0.7`.
+4. Remove `setup.py`.
 
 > [!NOTE]
 >
