@@ -2,7 +2,3 @@ modules = {
     ["ci-template"] = "lua/ci-template.lua",
     ["ci-template.*"] = "lua",
 }
-
-exclude = {
-    "lua/actboy168_json.lua",
-}
