@@ -59,18 +59,18 @@ Additionally for main/master branch:
 >
 > The `setup.py` script is actually doing below steps:
 >
-> 1. Update below files with provided `{ORG}`, `{REPO}` (and optional `{REQUIRED_VERSION}`):
->    - `LICENSE`.
->    - Action files in `github/workflows`.
->    - `.luacov`.
-> 2. Rename below files:
->    - `lua/ci-template.lua` to `lua/{REPO}.lua` (`.nvim` suffix is been removed if exists).
->    - `spec/ci_template_spec.lua` to `spec/{REPO}_spec.lua` (`.nvim` suffix is been removed if exists).
-> 3. Reset below files:
+> 1. Reset below files:
 >    - `README.md`.
 >    - `CHANGELOG.md`.
 >    - `version.txt`.
-> 4. (Optional) reset the indent size (only when `{INDENT_SIZE}` is been provided) in below files:
+> 2. Update below files with provided `{ORG}`, `{REPO}` (and optional `{REQUIRED_VERSION}`):
+>    - `LICENSE`.
+>    - `.luacov`.
+>    - Action files in `github/workflows`.
+> 3. Rename below files:
+>    - `lua/ci-template.lua` to `lua/{REPO}.lua` (`.nvim` suffix is been removed if exists).
+>    - `spec/ci_template_spec.lua` to `spec/{REPO}_spec.lua` (`.nvim` suffix is been removed if exists).
+> 4. (Optional) reset the indent size with `{INDENT_SIZE}` in below files:
 >    - `.editorconfig`.
 >    - `.stylua.toml`.
 >    - `.nvim.lua`.
