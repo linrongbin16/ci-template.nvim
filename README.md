@@ -29,10 +29,10 @@ CI template for Neovim plugin project.
 
 For PR branch:
 
-1. [Conventional Commits Check](https://github.com/linrongbin16/ci-template.nvim/blob/main/.github/workflows/lint.yml).
-2. luacheck.
-3. LuaLs annotations typecheck.
-4. stylua code format.
+1. [Conventional Commits Check](https://github.com/linrongbin16/ci-template.nvim/blob/d7054ed195ca72ca138f6f6e1f5656677110bc16/.github/workflows/lint.yml?plain=1#L15).
+2. [Luacheck](https://github.com/linrongbin16/ci-template.nvim/blob/d7054ed195ca72ca138f6f6e1f5656677110bc16/.github/workflows/lint.yml?plain=1#L24).
+3. [Type Check](https://github.com/linrongbin16/ci-template.nvim/blob/d7054ed195ca72ca138f6f6e1f5656677110bc16/.github/workflows/lint.yml?plain=1#L29) by lua-language-server annotations.
+4. [Stylua Code Format](https://github.com/linrongbin16/ci-template.nvim/blob/d7054ed195ca72ca138f6f6e1f5656677110bc16/.github/workflows/lint.yml?plain=1#L38).
 5. run vusted (busted) unit tests for 3 version of Neovim: minimal required (0.7+), stable and nightly.
 
 Additionally for main branch:
