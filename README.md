@@ -23,19 +23,17 @@ CI template for Neovim plugin project.
 ## Requirements
 
 - [CodeCov](https://about.codecov.io/) token: upload CodeCov report.
-- [LuaRocks](https://luarocks.org/) API token: upload LuaRocks package.
+- [LuaRocks](https://luarocks.org/) API token: upload LuaRocks rocks.
 
 ## Actions
 
-It runs the following actions:
-
 For PR branch:
 
-1. conventional PR commits check.
+1. [Conventional Commits Check]().
 2. luacheck.
 3. LuaLs annotations typecheck.
 4. stylua code format.
-6. run vusted (busted) unit tests for 3 version of Neovim: minimal required (0.7+), stable and nightly.
+5. run vusted (busted) unit tests for 3 version of Neovim: minimal required (0.7+), stable and nightly.
 
 Additionally for main branch:
 
