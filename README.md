@@ -1,3 +1,5 @@
+<!-- markdownlint-disable MD001 MD013 MD034 MD033 MD051 -->
+
 # ci-template.nvim
 
 <p align="center">
@@ -35,9 +37,9 @@ For PR branch:
 5. [Run unit tests](https://github.com/linrongbin16/ci-template.nvim/blob/1520f234f2a9b78509b8fe13d684d29c7a0174e8/.github/workflows/test.yml?plain=1#L15) for both [Windows](https://github.com/linrongbin16/ci-template.nvim/blob/1520f234f2a9b78509b8fe13d684d29c7a0174e8/.github/workflows/test.yml?plain=1#L15) and [Unix/Linux](https://github.com/linrongbin16/ci-template.nvim/blob/1520f234f2a9b78509b8fe13d684d29c7a0174e8/.github/workflows/test.yml?plain=1#L34), for multiple Neovim versions from [lowest to nightly](https://github.com/linrongbin16/ci-template.nvim/blob/1520f234f2a9b78509b8fe13d684d29c7a0174e8/.github/workflows/test.yml?plain=1#L38).
 6. [Upload code coverage](https://github.com/linrongbin16/ci-template.nvim/blob/93a666c874a440e6835a74f3d22931e8e70a9719/.github/workflows/coverage.yml?plain=1#L15).
 
-Additionally for main branch:
+Additionally for main/master branch:
 
-1. [Release](https://github.com/linrongbin16/ci-template.nvim/blob/1520f234f2a9b78509b8fe13d684d29c7a0174e8/.github/workflows/release.yml?plain=1#L20) on main/master branch push.
+1. [Auto release](https://github.com/linrongbin16/ci-template.nvim/blob/1520f234f2a9b78509b8fe13d684d29c7a0174e8/.github/workflows/release.yml?plain=1#L20).
 2. [Create tag](https://github.com/linrongbin16/ci-template.nvim/blob/1520f234f2a9b78509b8fe13d684d29c7a0174e8/.github/workflows/release.yml?plain=1#L26).
 3. [Upload LuaRocks rocks](https://github.com/linrongbin16/ci-template.nvim/blob/1520f234f2a9b78509b8fe13d684d29c7a0174e8/.github/workflows/release.yml?plain=1#L33).
 
@@ -48,48 +50,42 @@ Additionally for main branch:
 1. Click the **_"Use this template"_** button (in the top right) to create new Neovim plugin project.
 2. Clone the repository to local.
 3. Run `./setup.py` with below arguments:
-   - `${ORG}`: organization.
-   - `${REPO}`: repository.
-   - (Optional) `${INDENT}`: indent size, by default is `2`.
-   - (Optional) `${REQUIRED_VERSION}`: minimal required nvim version, by default is `0.7`.
+   - `--org`: organization.
+   - `--repo`: repository.
+   - (Optional) `--indent-size`: indent size, by default is `2`.
+   - (Optional) `--required-version`: minimal required nvim version, by default is `0.7`.
 
 > [!NOTE]
 >
 > The `setup.py` script is actually doing below steps:
 >
-> 1. Remove the [CHANGELOG.md](https://github.com/linrongbin16/ci-template.nvim/blob/8ba994d7a64c52bb3a4a046068a510f54219aacd/CHANGELOG.md?plain=1#L1) (it's only for **_this_** project, you don't want it).
-> 2. Update below files with provided `${ORG}` and `${REPO}`:
+> 1. Reset below files:
 >    - `README.md`.
->    - `LICENSE`.
->    - `github/workflows`:
->      - `lint.yml`.
->      - `release.yml`.
->      - `test.yml`.
->    - `.luacov`.
-> 4. Rename below files:
->    - `lua/ci-template.lua` to `lua/${REPO}.lua` (`.nvim` suffix is been removed if exists).
->    - `spec/ci_template_spec.lua` to `spec/${REPO}_spec.lua` (`.nvim` suffix is been removed if exists).
-> 5. Reset below files:
 >    - `CHANGELOG.md`.
 >    - `version.txt`.
-> 6. (Optional) reset the indent size (only when `${INDENT}` is been provided) in below files:
+> 2. Update below files with provided `{ORG}`, `{REPO}` (and optional `{REQUIRED_VERSION}`):
+>    - `LICENSE`.
+>    - `.luacov`.
+>    - Action files in `github/workflows`.
+> 3. Rename below files:
+>    - `lua/ci-template.lua` to `lua/{REPO}.lua` (`.nvim` suffix is been removed if exists).
+>    - `spec/ci_template_spec.lua` to `spec/{REPO}_spec.lua` (`.nvim` suffix is been removed if exists).
+> 4. (Optional) reset the indent size with `{INDENT_SIZE}` in below files:
 >    - `.editorconfig`.
 >    - `.stylua.toml`.
 >    - `.nvim.lua`.
-> 7. (Optional) update minimal required Neovim version in below files:
->    - `github/workflows/test.yml`.
 
 ### Development
 
-Setup the development environment with:
+Setup development environment with:
 
 - [lua-language-server](https://github.com/LuaLS/lua-language-server): for lua programming.
 - [stylua](https://github.com/JohnnyMorganz/StyLua): code format.
 - [luacheck](https://github.com/lunarmodules/luacheck): code static check.
 - [luarocks](https://luarocks.org/): for vusted/busted/luacov installation.
 
-Please setup unit test with:
+Setup unit test with:
 
-- [vusted](https://github.com/notomo/vusted): unit test.
+- [vusted](https://github.com/notomo/vusted).
 
 Then run test cases with `vusted ./spec`.
