@@ -1,3 +1,5 @@
+<!-- markdownlint-disable MD001 MD013 MD034 MD033 MD051 -->
+
 # ci-template.nvim
 
 <p align="center">
@@ -66,17 +68,17 @@ Additionally for main branch:
 >      - `release.yml`.
 >      - `test.yml`.
 >    - `.luacov`.
-> 4. Rename below files:
+> 3. Rename below files:
 >    - `lua/ci-template.lua` to `lua/${REPO}.lua` (`.nvim` suffix is been removed if exists).
 >    - `spec/ci_template_spec.lua` to `spec/${REPO}_spec.lua` (`.nvim` suffix is been removed if exists).
-> 5. Reset below files:
+> 4. Reset below files:
 >    - `CHANGELOG.md`.
 >    - `version.txt`.
-> 6. (Optional) reset the indent size (only when `${INDENT}` is been provided) in below files:
+> 5. (Optional) reset the indent size (only when `${INDENT}` is been provided) in below files:
 >    - `.editorconfig`.
 >    - `.stylua.toml`.
 >    - `.nvim.lua`.
-> 7. (Optional) update minimal required Neovim version in below files:
+> 6. (Optional) update minimal required Neovim version in below files:
 >    - `github/workflows/test.yml`.
 
 ### Development
