@@ -151,11 +151,6 @@ def setup(debug_opt, org_opt, repo_opt, required_opt, indent_opt):
         with JobLogger(f"update .nvim.lua"):
             replace_file(f".nvim.lua", "= 2", f"= {indent}")
 
-    # remove setup.py
-    if os.path.exists("setup.py"):
-        with JobLogger("remove setup.py"):
-            os.remove("setup.py")
-
 
 if __name__ == "__main__":
     setup()
