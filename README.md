@@ -39,9 +39,9 @@ For PR branch:
 
 Additionally for main/master branch:
 
-1. [Auto release](https://github.com/linrongbin16/ci-template.nvim/blob/1520f234f2a9b78509b8fe13d684d29c7a0174e8/.github/workflows/release.yml?plain=1#L20).
-2. [Create tag](https://github.com/linrongbin16/ci-template.nvim/blob/1520f234f2a9b78509b8fe13d684d29c7a0174e8/.github/workflows/release.yml?plain=1#L26).
-3. [Upload LuaRocks rocks](https://github.com/linrongbin16/ci-template.nvim/blob/1520f234f2a9b78509b8fe13d684d29c7a0174e8/.github/workflows/release.yml?plain=1#L33).
+1. [Auto release](https://github.com/linrongbin16/ci-template.nvim/blob/3657a9b4f672d64a56269a1c1794193352dbb316/.github/workflows/ci.yml?plain=1#L139).
+2. [Create tag](https://github.com/linrongbin16/ci-template.nvim/blob/3657a9b4f672d64a56269a1c1794193352dbb316/.github/workflows/ci.yml?plain=1#L145).
+3. [Upload LuaRocks rocks](https://github.com/linrongbin16/ci-template.nvim/blob/3657a9b4f672d64a56269a1c1794193352dbb316/.github/workflows/ci.yml?plain=1#L152).
 
 ## Usage
 
