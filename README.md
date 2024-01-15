@@ -63,14 +63,14 @@ Additionally for main/master branch:
 >    - `README.md`.
 >    - `CHANGELOG.md`.
 >    - `version.txt`.
-> 2. Update below files with provided `{ORG}`, `{REPO}` (and optional `{REQUIRED_VERSION}`):
+> 2. Update below files with provided `{org}`, `{repo}` (and optional `{required_version}`):
 >    - `LICENSE`.
 >    - `.luacov`.
 >    - Action files in `github/workflows`.
 > 3. Rename below files:
->    - `lua/ci-template.lua` to `lua/{REPO}.lua` (`.nvim` suffix is been removed if exists).
->    - `spec/ci_template_spec.lua` to `spec/{REPO}_spec.lua` (`.nvim` suffix is been removed if exists).
-> 4. (Optional) reset the indent size with `{INDENT_SIZE}` in below files:
+>    - `lua/ci-template.lua` to `lua/{repo}.lua` (`.nvim` suffix is been removed if exists).
+>    - `spec/ci_template_spec.lua` to `spec/{repo}_spec.lua` (`.nvim` suffix is been removed if exists).
+> 4. (Optional) reset the indent size with `{indent_size}` in below files:
 >    - `.editorconfig`.
 >    - `.stylua.toml`.
 >    - `.nvim.lua`.
