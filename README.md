@@ -35,7 +35,7 @@ For PR branch:
 3. [Static check](https://github.com/linrongbin16/ci-template.nvim/blob/a12dc1f0434955325bf54820d35da737adfa46ec/.github/workflows/ci.yml?plain=1#L35) by luacheck.
 4. [Code format](https://github.com/linrongbin16/ci-template.nvim/blob/3657a9b4f672d64a56269a1c1794193352dbb316/.github/workflows/ci.yml?plain=1#L38) by stylua.
 5. [Run unit tests](https://github.com/linrongbin16/ci-template.nvim/blob/3657a9b4f672d64a56269a1c1794193352dbb316/.github/workflows/ci.yml?plain=1#L48-L93) for both [Windows](https://github.com/linrongbin16/ci-template.nvim/blob/3657a9b4f672d64a56269a1c1794193352dbb316/.github/workflows/ci.yml?plain=1#L48) and [Unix/Linux](https://github.com/linrongbin16/ci-template.nvim/blob/3657a9b4f672d64a56269a1c1794193352dbb316/.github/workflows/ci.yml?plain=1#L69), and [multiple Neovim versions](https://github.com/linrongbin16/ci-template.nvim/blob/3657a9b4f672d64a56269a1c1794193352dbb316/.github/workflows/ci.yml?plain=1#L75) from lowest to nightly.
-6. [Upload code coverage](https://github.com/linrongbin16/ci-template.nvim/blob/93a666c874a440e6835a74f3d22931e8e70a9719/.github/workflows/coverage.yml?plain=1#L15).
+6. [Upload code coverage](https://github.com/linrongbin16/ci-template.nvim/blob/3657a9b4f672d64a56269a1c1794193352dbb316/.github/workflows/ci.yml?plain=1#L94) by luacov.
 
 Additionally for main/master branch:
 
