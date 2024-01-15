@@ -37,13 +37,6 @@ def replace_file(filename, old, new):
 
 
 @click.command()
-@click.option(
-    "-d",
-    "--debug",
-    "debug_opt",
-    is_flag=True,
-    help="enable debug",
-)
 @click.option("-o", "--org", "org_opt", required=True, help="organization")
 @click.option("-r", "--repo", "repo_opt", required=True, help="repository")
 @click.option(
@@ -54,6 +47,12 @@ def replace_file(filename, old, new):
 )
 @click.option(
     "--indent-size", "indent_opt", default=2, help="indent size, by default is `2`"
+)
+@click.option(
+    "--debug",
+    "debug_opt",
+    is_flag=True,
+    help="enable debug, by default is `false`",
 )
 def setup(debug_opt, org_opt, repo_opt, required_opt, indent_opt):
     init_logging(logging.DEBUG if debug_opt else logging.INFO)
