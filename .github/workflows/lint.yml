@@ -14,7 +14,7 @@ concurrency:
 jobs:
   conventional_commit:
     name: Conventional Commits
-    if: ${{ github.ref != 'refs/heads/main' || github.ref != 'refs/heads/master' }}
+    if: ${{ github.ref != 'refs/heads/main' && github.ref != 'refs/heads/master' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -41,7 +41,7 @@ jobs:
           version: latest
           args: --config-path .stylua.toml ./lua ./spec
       - uses: stefanzweifel/git-auto-commit-action@v4
-        if: ${{ github.ref != 'refs/heads/main' || github.ref != 'refs/heads/master' }}
+        if: ${{ github.ref != 'refs/heads/main' && github.ref != 'refs/heads/master' }}
         with:
           commit_message: "chore(pr): auto-commit"
           push_options: "--force"
