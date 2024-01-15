@@ -87,4 +87,9 @@ Setup the development environment with:
 - [stylua](https://github.com/JohnnyMorganz/StyLua): code format.
 - [luacheck](https://github.com/lunarmodules/luacheck): code static check.
 - [luarocks](https://luarocks.org/): for vusted/busted/luacov installation.
+
+Please setup unit test with:
+
 - [vusted](https://github.com/notomo/vusted): unit test.
+
+Then run test cases with `vusted./spec`.
