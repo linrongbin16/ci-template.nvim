@@ -83,11 +83,9 @@ Setup development environment with:
 - [lua-language-server](https://github.com/LuaLS/lua-language-server): Lua programming.
 - [stylua](https://github.com/JohnnyMorganz/StyLua): Code format.
 - [selene](https://github.com/Kampfkarren/selene): Static check.
-- [luarocks](https://luarocks.org/): Lua package manager.
-- [vusted](https://github.com/notomo/vusted): Neovim wrapper on `busted`. 
 
-Run test cases with:
+To run unit tests, install below dependencies:
 
-```bash
-vusted ./spec
-```
+- [vusted](https://github.com/notomo/vusted): Neovim wrapper on `busted`.
+
+Then run `vusted ./spec`.
