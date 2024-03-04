@@ -80,12 +80,12 @@ Additionally for main/master branch:
 
 Setup development environment with:
 
-- [lua-language-server](https://github.com/LuaLS/lua-language-server): Lua programming.
-- [stylua](https://github.com/JohnnyMorganz/StyLua): Code format.
-- [selene](https://github.com/Kampfkarren/selene): Static check.
+- [lua-language-server](https://github.com/LuaLS/lua-language-server).
+- [stylua](https://github.com/JohnnyMorganz/StyLua).
+- [selene](https://github.com/Kampfkarren/selene).
 
 To run unit tests, install below dependencies:
 
-- [vusted](https://github.com/notomo/vusted): Neovim wrapper on `busted`.
+- [vusted](https://github.com/notomo/vusted).
 
 Then run `vusted ./spec`.
