@@ -93,10 +93,10 @@ def setup(debug_opt, org_opt, repo_opt, required_opt, indent_opt):
 # {repo_nvim}
 
 <p align="center">
-<a href="https://github.com/neovim/neovim/releases/{required_version}"><img alt="Neovim" src="https://img.shields.io/badge/Neovim-{required_version_short}+-57A143?logo=neovim&logoColor=57A143" /></a>
-<a href="https://luarocks.org/modules/{org}/{repo_nvim}"><img alt="luarocks" src="https://custom-icon-badges.demolab.com/luarocks/v/{org}/{repo_nvim}?label=LuaRocks&labelColor=063B70&logo=tag&logoColor=fff&color=blue" /></a>
-<a href="https://github.com/{org}/{repo_nvim}/actions/workflows/ci.yml"><img alt="ci.yml" src="https://img.shields.io/github/actions/workflow/status/{org}/{repo_nvim}/ci.yml?label=GitHub%20CI&labelColor=181717&logo=github&logoColor=fff" /></a>
-<a href="https://app.codecov.io/github/{org}/{repo_nvim}"><img alt="codecov" src="https://img.shields.io/codecov/c/github/{org}/{repo_nvim}?logo=codecov&logoColor=F01F7A&label=Codecov" /></a>
+<a href="https://github.com/neovim/neovim/releases/{required_version}"><img alt="Neovim" src="https://img.shields.io/badge/require-{required_version_short}+-blue" /></a>
+<a href="https://luarocks.org/modules/{org}/{repo_nvim}"><img alt="luarocks" src="https://img.shields.io/luarocks/v/{org}/{repo_nvim}" /></a>
+<a href="https://github.com/{org}/{repo_nvim}/actions/workflows/ci.yml"><img alt="ci.yml" src="https://img.shields.io/github/actions/workflow/status/{org}/{repo_nvim}/ci.yml?label=ci" /></a>
+<a href="https://app.codecov.io/github/{org}/{repo_nvim}"><img alt="codecov" src="https://img.shields.io/codecov/c/github/{org}/{repo_nvim}?label=codecov" /></a>
 </p>
 
 """
