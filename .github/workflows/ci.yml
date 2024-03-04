@@ -32,9 +32,11 @@ jobs:
           level: Information
           configpath: ".luarc.json"
           neodev-version: stable
-      - uses: lunarmodules/luacheck@v1
-        with:
-          args: lua --config .luacheckrc
+      - uses: cargo-bins/cargo-binstall@main
+      - name: Selene
+        run: |
+          cargo binstall --no-confirm selene
+          selene --config selene.toml ./lua
       - uses: JohnnyMorganz/stylua-action@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
