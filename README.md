@@ -23,8 +23,8 @@ CI template for Neovim plugin project.
 
 ## Requirements
 
-- [CodeCov](https://about.codecov.io/) token: upload CodeCov report.
-- [LuaRocks](https://luarocks.org/) API token: upload LuaRocks rocks.
+- [CodeCov](https://about.codecov.io/) Token: Upload CodeCov report.
+- [LuaRocks](https://luarocks.org/) API Token: Upload LuaRocks rocks.
 
 ## Actions
 
@@ -32,9 +32,9 @@ For PR branch:
 
 1. [Conventional commits check](https://github.com/linrongbin16/ci-template.nvim/blob/a12dc1f0434955325bf54820d35da737adfa46ec/.github/workflows/ci.yml?plain=1#L15).
 2. [Type check](https://github.com/linrongbin16/ci-template.nvim/blob/a12dc1f0434955325bf54820d35da737adfa46ec/.github/workflows/ci.yml?plain=1#L29) by lua-language-server.
-3. [Static check](https://github.com/linrongbin16/ci-template.nvim/blob/a12dc1f0434955325bf54820d35da737adfa46ec/.github/workflows/ci.yml?plain=1#L35) by luacheck.
+3. [Static check](https://github.com/linrongbin16/ci-template.nvim/blob/a12dc1f0434955325bf54820d35da737adfa46ec/.github/workflows/ci.yml?plain=1#L35) by selene.
 4. [Code format](https://github.com/linrongbin16/ci-template.nvim/blob/3657a9b4f672d64a56269a1c1794193352dbb316/.github/workflows/ci.yml?plain=1#L38) by stylua.
-5. [Run unit tests](https://github.com/linrongbin16/ci-template.nvim/blob/3657a9b4f672d64a56269a1c1794193352dbb316/.github/workflows/ci.yml?plain=1#L48-L93) by vusted/busted, for both [Windows](https://github.com/linrongbin16/ci-template.nvim/blob/3657a9b4f672d64a56269a1c1794193352dbb316/.github/workflows/ci.yml?plain=1#L48) and [Unix/Linux](https://github.com/linrongbin16/ci-template.nvim/blob/3657a9b4f672d64a56269a1c1794193352dbb316/.github/workflows/ci.yml?plain=1#L69), and [multiple Neovim versions](https://github.com/linrongbin16/ci-template.nvim/blob/3657a9b4f672d64a56269a1c1794193352dbb316/.github/workflows/ci.yml?plain=1#L75) from lowest to nightly.
+5. [Run unit tests](https://github.com/linrongbin16/ci-template.nvim/blob/3657a9b4f672d64a56269a1c1794193352dbb316/.github/workflows/ci.yml?plain=1#L48-L93) by vusted, for both [Windows](https://github.com/linrongbin16/ci-template.nvim/blob/3657a9b4f672d64a56269a1c1794193352dbb316/.github/workflows/ci.yml?plain=1#L48) and [Unix/Linux](https://github.com/linrongbin16/ci-template.nvim/blob/3657a9b4f672d64a56269a1c1794193352dbb316/.github/workflows/ci.yml?plain=1#L69), and [multiple Neovim versions](https://github.com/linrongbin16/ci-template.nvim/blob/3657a9b4f672d64a56269a1c1794193352dbb316/.github/workflows/ci.yml?plain=1#L75) from lowest to nightly.
 6. [Upload code coverage](https://github.com/linrongbin16/ci-template.nvim/blob/3657a9b4f672d64a56269a1c1794193352dbb316/.github/workflows/ci.yml?plain=1#L94) by luacov.
 
 Additionally for main/master branch:
