@@ -111,7 +111,7 @@ def setup(debug_opt, org_opt, repo_opt, required_opt, indent_opt):
     with JobLogger("update .github/workflows"):
         for action_file in os.listdir(".github/workflows"):
             replace_file(f".github/workflows/{action_file}", "linrongbin16", org)
-            replace_file(f".github/workflows/{action_file}", "ci-template", org)
+            replace_file(f".github/workflows/{action_file}", "ci-template", repo)
             replace_file(f".github/workflows/{action_file}", "v0.7.0", required_version)
 
     # update .luacov
