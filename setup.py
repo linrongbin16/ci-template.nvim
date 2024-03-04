@@ -140,16 +140,16 @@ def setup(debug_opt, org_opt, repo_opt, required_opt, indent_opt):
 
     if indent != 2:
         # update .editorconfig
-        with JobLogger(f"update .editorconfig"):
-            replace_file(f".editorconfig", "= 2", f"= {indent}")
+        with JobLogger("update .editorconfig"):
+            replace_file(".editorconfig", "= 2", f"= {indent}")
 
         # update .stylua.toml
-        with JobLogger(f"update .stylua.toml"):
-            replace_file(f".stylua.toml", "= 2", f"= {indent}")
+        with JobLogger("update .stylua.toml"):
+            replace_file(".stylua.toml", "= 2", f"= {indent}")
 
         # update .nvim.lua
-        with JobLogger(f"update .nvim.lua"):
-            replace_file(f".nvim.lua", "= 2", f"= {indent}")
+        with JobLogger("update .nvim.lua"):
+            replace_file(".nvim.lua", "= 2", f"= {indent}")
 
 
 if __name__ == "__main__":
