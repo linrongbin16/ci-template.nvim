@@ -21,8 +21,8 @@ jobs:
       - uses: amannn/action-semantic-pull-request@v5
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  luacheck:
-    name: Lua Check
+  lint:
+    name: Lint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -50,7 +50,7 @@ jobs:
   windows_unit_test:
     name: Windows Tests
     needs:
-      - luacheck
+      - lint
     strategy:
       matrix:
         nvim_version: [stable]
@@ -71,7 +71,7 @@ jobs:
   unix_unit_test:
     name: Unix Tests
     needs:
-      - luacheck
+      - lint
     strategy:
       matrix:
         nvim_version: [stable, nightly, v0.7.0]
@@ -95,7 +95,7 @@ jobs:
   code_coverage:
     name: Code Coverage
     needs:
-      - luacheck
+      - lint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
