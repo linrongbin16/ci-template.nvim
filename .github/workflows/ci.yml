@@ -90,7 +90,6 @@ jobs:
       - uses: leafo/gh-actions-luarocks@v4
       - name: Run Tests
         run: |
-          luarocks install luacheck
           luarocks install vusted
           vusted --shuffle ./spec
   code_coverage:
@@ -111,7 +110,6 @@ jobs:
       - uses: leafo/gh-actions-luarocks@v4
       - name: Run Tests
         run: |
-          luarocks install luacheck
           luarocks install luacov
           luarocks install vusted
           vusted --coverage ./spec
