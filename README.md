@@ -82,7 +82,7 @@ Setup development environment with:
 
 - [lua-language-server](https://github.com/LuaLS/lua-language-server): Lua programming.
 - [stylua](https://github.com/JohnnyMorganz/StyLua): Code format.
-- [luacheck](https://github.com/lunarmodules/luacheck): Static check.
+- [selene](https://github.com/Kampfkarren/selene): Static check.
 - [luarocks](https://luarocks.org/): Lua package manager.
 - [vusted](https://github.com/notomo/vusted): Neovim wrapper on `busted`. 
 
