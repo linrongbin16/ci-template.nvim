@@ -1,5 +1,22 @@
 # Changelog
 
+## [5.0.0](https://github.com/linrongbin16/ci-template.nvim/compare/v4.2.1...v5.0.0) (2024-03-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* migrate 'luacheck' to 'selene' ([#67](https://github.com/linrongbin16/ci-template.nvim/issues/67))
+
+### Features
+
+* migrate 'luacheck' to 'selene' ([#67](https://github.com/linrongbin16/ci-template.nvim/issues/67)) ([a0e33c9](https://github.com/linrongbin16/ci-template.nvim/commit/a0e33c93f4ea0a45c44dc7701aa092be51d41bc6))
+
+
+### Bug Fixes
+
+* fix doc badges ([#70](https://github.com/linrongbin16/ci-template.nvim/issues/70)) ([88e6d44](https://github.com/linrongbin16/ci-template.nvim/commit/88e6d44166406e988c59c812231658e0cc958be6))
+* replace 'ci-template' with '{repo}' ([#69](https://github.com/linrongbin16/ci-template.nvim/issues/69)) ([8b04b4a](https://github.com/linrongbin16/ci-template.nvim/commit/8b04b4a4fa2a89eb1a1f63828ac3dacbba5549b0))
+
 ## [4.2.1](https://github.com/linrongbin16/ci-template.nvim/compare/v4.2.0...v4.2.1) (2024-01-15)
 
 
