@@ -23,8 +23,8 @@ CI template for Neovim plugin project.
 
 ## Requirements
 
-- [CodeCov](https://about.codecov.io/) Token: Upload CodeCov report.
-- [LuaRocks](https://luarocks.org/) API Token: Upload LuaRocks rocks.
+- [CodeCov](https://about.codecov.io/) token: upload CodeCov report.
+- [LuaRocks](https://luarocks.org/) API token: upload LuaRocks rocks.
 
 ## Actions
 
