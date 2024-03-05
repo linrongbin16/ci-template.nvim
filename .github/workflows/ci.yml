@@ -139,8 +139,8 @@ jobs:
       - uses: google-github-actions/release-please-action@v4
         id: release
         with:
-          release-type: simple
-          package-name: ci-template.nvim
+          config-file: release-please-config.json
+          manifest-file: .release-please-manifest.json
       - uses: actions/checkout@v4
       - uses: rickstaa/action-create-tag@v1
         if: ${{ steps.release.outputs.release_created }}
