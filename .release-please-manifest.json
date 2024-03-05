@@ -1,8 +1,0 @@
-{
-  "release-type": "simple",
-    "packages": {
-      ".": {
-        "package-name": "ci-template.nvim"
-      }
-  }
-}
