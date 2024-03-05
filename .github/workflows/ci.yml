@@ -140,7 +140,6 @@ jobs:
         id: release
         with:
           config-file: release-please-config.json
-          manifest-file: .release-please-manifest.json
       - uses: actions/checkout@v4
       - uses: rickstaa/action-create-tag@v1
         if: ${{ steps.release.outputs.release_created }}
