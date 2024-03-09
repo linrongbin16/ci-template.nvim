@@ -1,5 +1,23 @@
 # Changelog
 
+## [7.0.0](https://github.com/linrongbin16/ci-template.nvim/compare/ci-template.nvim-v6.0.1...ci-template.nvim-v7.0.0) (2024-03-09)
+
+
+### ⚠ BREAKING CHANGES
+
+* **tag:** remove 'stable' tag ([#82](https://github.com/linrongbin16/ci-template.nvim/issues/82))
+
+### Bug Fixes
+
+* **release:** fix release config ([#83](https://github.com/linrongbin16/ci-template.nvim/issues/83)) ([aec27f8](https://github.com/linrongbin16/ci-template.nvim/commit/aec27f884aab7527aba3734136f4846a914b481c))
+* **release:** fix rocks version ([#82](https://github.com/linrongbin16/ci-template.nvim/issues/82)) ([675a97e](https://github.com/linrongbin16/ci-template.nvim/commit/675a97e6b327800cb07411a96fde3935432f5b43))
+* **release:** fix tag name ([#80](https://github.com/linrongbin16/ci-template.nvim/issues/80)) ([f96295d](https://github.com/linrongbin16/ci-template.nvim/commit/f96295d0333de322d047ac041be9aceab9ca1aa6))
+
+
+### Performance Improvements
+
+* **tag:** remove 'stable' tag ([#82](https://github.com/linrongbin16/ci-template.nvim/issues/82)) ([675a97e](https://github.com/linrongbin16/ci-template.nvim/commit/675a97e6b327800cb07411a96fde3935432f5b43))
+
 ## [6.0.1](https://github.com/linrongbin16/ci-template.nvim/compare/ci-template.nvim-v6.0.0...ci-template.nvim-v6.0.1) (2024-03-09)
 
 
