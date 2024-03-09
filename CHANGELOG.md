@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.0.1](https://github.com/linrongbin16/ci-template.nvim/compare/ci-template.nvim-v6.0.0...ci-template.nvim-v6.0.1) (2024-03-09)
+
+
+### Bug Fixes
+
+* **release:** print tag ([#78](https://github.com/linrongbin16/ci-template.nvim/issues/78)) ([c05f07c](https://github.com/linrongbin16/ci-template.nvim/commit/c05f07c84006897141ce8aa2d48fa6c06a26d724))
+
 ## [6.0.0](https://github.com/linrongbin16/ci-template.nvim/compare/ci-template.nvim-v5.0.0...ci-template.nvim-v6.0.0) (2024-03-09)
 
 
