@@ -16,7 +16,7 @@ CI template for Neovim plugin project.
 ## Table of Contents
 
 - [Requirements](#requirements)
-- [Actions](#actions)
+- [Features](#features)
 - [Usage](#usage)
   - [Initialize](#initialize)
   - [Development](#development)
@@ -26,7 +26,7 @@ CI template for Neovim plugin project.
 - [CodeCov](https://about.codecov.io/) token: upload CodeCov report.
 - [LuaRocks](https://luarocks.org/) API token: upload LuaRocks rocks.
 
-## Actions
+## Features
 
 For PR branch:
 
@@ -40,8 +40,7 @@ For PR branch:
 Additionally for main/master branch:
 
 1. [Auto release](https://github.com/linrongbin16/ci-template.nvim/blob/3657a9b4f672d64a56269a1c1794193352dbb316/.github/workflows/ci.yml?plain=1#L139).
-2. [Auto tag](https://github.com/linrongbin16/ci-template.nvim/blob/3657a9b4f672d64a56269a1c1794193352dbb316/.github/workflows/ci.yml?plain=1#L145).
-3. [Upload LuaRocks rocks](https://github.com/linrongbin16/ci-template.nvim/blob/3657a9b4f672d64a56269a1c1794193352dbb316/.github/workflows/ci.yml?plain=1#L152).
+2. [Upload LuaRocks rocks](https://github.com/linrongbin16/ci-template.nvim/blob/3657a9b4f672d64a56269a1c1794193352dbb316/.github/workflows/ci.yml?plain=1#L152).
 
 ## Usage
 
