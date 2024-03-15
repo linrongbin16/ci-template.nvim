@@ -132,11 +132,11 @@ def setup(debug_opt, org_opt, repo_opt, required_opt, indent_opt):
         replace_file(f"spec/{repo_underscore}_spec.lua", "linrongbin16", org)
         replace_file(f"spec/{repo_underscore}_spec.lua", "ci-template", repo)
         replace_file(f"spec/{repo_underscore}_spec.lua", "ci_template", repo_underscore)
-
-    # clear version.txt
-    with JobLogger("update version.txt"):
-        with open("version.txt", "w") as fp:
-            fp.write("")
+        
+    # clear .release-please-manifest.json
+    with JobLogger("update .release-please-manifest.json"):
+        with open(".release-please-manifest.json", "w") as fp:
+            fp.write('{\n    ".": "0.0.1"\n}')
 
     if indent != 2:
         # update .editorconfig
