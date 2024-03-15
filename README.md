@@ -62,7 +62,7 @@ Additionally for main/master branch:
 > 1. Reset below files:
 >    - `README.md`.
 >    - `CHANGELOG.md`.
->    - `version.txt`.
+>    - `.release-please-manifest.json`.
 > 2. Update below files with provided `{org}`, `{repo}` (and optional `{required_version}`):
 >    - `LICENSE`.
 >    - `.luacov`.
