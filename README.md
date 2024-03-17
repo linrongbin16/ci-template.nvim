@@ -25,7 +25,7 @@ CI template for Neovim plugin project.
 
 - Tokens: add below tokens in project **Settings** => **Security** => **Secrets and variables** => **Actions**.
 - [CodeCov](https://about.codecov.io/) token: `CODECOV_TOKEN`.
-- [LuaRocks](https://luarocks.org/) API token: `LUAROCKS_API_KEY`.
+- [LuaRocks](https://luarocks.org/) token: `LUAROCKS_API_KEY`.
 
 ## Features
 
