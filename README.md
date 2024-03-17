@@ -24,7 +24,7 @@ CI template for Neovim plugin project.
 ## Requirements
 
 - [CodeCov](https://about.codecov.io/) token: upload CodeCov report.
-- [LuaRocks](https://luarocks.org/) API token: upload LuaRocks rocks.
+- [LuaRocks](https://luarocks.org/) token: upload LuaRocks rockspec.
 
 ## Features
 
@@ -47,13 +47,19 @@ Additionally for main/master branch:
 ### Initialize
 
 1. Click the **_"Use this template"_** button (in the top right) to create new Neovim plugin project.
-2. Clone the repository to local.
-3. Run `setup.py` with below arguments:
+2. Go to project **Settings** => **Security** => **Secrets and variables** => **Actions**, and add below tokens:
+   - [CodeCov](https://about.codecov.io/) token: `CODECOV_TOKEN`.
+   - [LuaRocks](https://luarocks.org/) token: `LUAROCKS_API_KEY`.
+3. Go to project **Settings** => **Code and automation** => **Actions** => **General** => **Workflow permissions**, and select below options:
+   - **Read and write permission**.
+   - **Allow GitHub Actions to create and approve pull requests**.
+4. Clone the repository to local.
+5. Run `setup.py` with below arguments:
    - `--org`: organization.
    - `--repo`: repository.
    - (Optional) `--indent-size`: indent size, by default is `2`.
    - (Optional) `--required-version`: minimal required nvim version, by default is `0.7`.
-4. Remove `setup.py`.
+6. Remove `setup.py` and commit your first change.
 
 > [!NOTE]
 >
@@ -62,7 +68,7 @@ Additionally for main/master branch:
 > 1. Reset below files:
 >    - `README.md`.
 >    - `CHANGELOG.md`.
->    - `version.txt`.
+>    - `.release-please-manifest.json`.
 > 2. Update below files with provided `{org}`, `{repo}` (and optional `{required_version}`):
 >    - `LICENSE`.
 >    - `.luacov`.
