@@ -48,8 +48,8 @@ Additionally for main/master branch:
 
 1. Click the **_"Use this template"_** button (in the top right) to create new Neovim plugin project.
 2. Add below tokens in project **Settings** => **Security** => **Secrets and variables** => **Actions**.
-  - [CodeCov](https://about.codecov.io/) token: `CODECOV_TOKEN`.
-  - [LuaRocks](https://luarocks.org/) token: `LUAROCKS_API_KEY`.
+   - [CodeCov](https://about.codecov.io/) token: `CODECOV_TOKEN`.
+   - [LuaRocks](https://luarocks.org/) token: `LUAROCKS_API_KEY`.
 3. Clone the repository to local.
 4. Run `setup.py` with below arguments:
    - `--org`: organization.
