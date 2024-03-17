@@ -24,7 +24,7 @@ CI template for Neovim plugin project.
 ## Requirements
 
 - [CodeCov](https://about.codecov.io/) token: upload CodeCov report.
-  - [LuaRocks](https://luarocks.org/) token: upload LuaRocks rockspec.
+- [LuaRocks](https://luarocks.org/) token: upload LuaRocks rockspec.
 
 ## Features
 
