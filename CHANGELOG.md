@@ -1,5 +1,12 @@
 # Changelog
 
+## [8.1.0](https://github.com/linrongbin16/ci-template.nvim/compare/v8.0.1...v8.1.0) (2024-03-17)
+
+
+### Features
+
+* **cancel:** do not cancel main/master branch ([#91](https://github.com/linrongbin16/ci-template.nvim/issues/91)) ([472ed1f](https://github.com/linrongbin16/ci-template.nvim/commit/472ed1fdecc8faa73d1b7c651dfe0ec8f857c1a8))
+
 ## [8.0.1](https://github.com/linrongbin16/ci-template.nvim/compare/v8.0.0...v8.0.1) (2024-03-17)
 
 
