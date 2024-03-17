@@ -47,16 +47,19 @@ Additionally for main/master branch:
 ### Initialize
 
 1. Click the **_"Use this template"_** button (in the top right) to create new Neovim plugin project.
-2. Add below tokens in project **Settings** => **Security** => **Secrets and variables** => **Actions**.
+2. Go to project **Settings** => **Security** => **Secrets and variables** => **Actions**, and add below tokens:
    - [CodeCov](https://about.codecov.io/) token: `CODECOV_TOKEN`.
    - [LuaRocks](https://luarocks.org/) token: `LUAROCKS_API_KEY`.
-3. Clone the repository to local.
-4. Run `setup.py` with below arguments:
+3. Go to project **Settings** => **Code and automation** => **Actions** => **General** => **Workflow permissions**, and configure below options:
+   - Select **Read and write permission**.
+   - Select **Allow GitHub Actions to create and approve pull requests**.
+5. Clone the repository to local.
+6. Run `setup.py` with below arguments:
    - `--org`: organization.
    - `--repo`: repository.
    - (Optional) `--indent-size`: indent size, by default is `2`.
    - (Optional) `--required-version`: minimal required nvim version, by default is `0.7`.
-5. Remove `setup.py`.
+7. Remove `setup.py` and commit your first change.
 
 > [!NOTE]
 >
