@@ -50,16 +50,16 @@ Additionally for main/master branch:
 2. Go to project **Settings** => **Security** => **Secrets and variables** => **Actions**, and add below tokens:
    - [CodeCov](https://about.codecov.io/) token: `CODECOV_TOKEN`.
    - [LuaRocks](https://luarocks.org/) token: `LUAROCKS_API_KEY`.
-3. Go to project **Settings** => **Code and automation** => **Actions** => **General** => **Workflow permissions**, and configure below options:
-   - Select **Read and write permission**.
-   - Select **Allow GitHub Actions to create and approve pull requests**.
-5. Clone the repository to local.
-6. Run `setup.py` with below arguments:
+3. Go to project **Settings** => **Code and automation** => **Actions** => **General** => **Workflow permissions**, and select below options:
+   - **Read and write permission**.
+   - **Allow GitHub Actions to create and approve pull requests**.
+4. Clone the repository to local.
+5. Run `setup.py` with below arguments:
    - `--org`: organization.
    - `--repo`: repository.
    - (Optional) `--indent-size`: indent size, by default is `2`.
    - (Optional) `--required-version`: minimal required nvim version, by default is `0.7`.
-7. Remove `setup.py` and commit your first change.
+6. Remove `setup.py` and commit your first change.
 
 > [!NOTE]
 >
