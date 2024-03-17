@@ -1,5 +1,12 @@
 # Changelog
 
+## [8.0.1](https://github.com/linrongbin16/ci-template.nvim/compare/v8.0.0...v8.0.1) (2024-03-17)
+
+
+### Bug Fixes
+
+* **release:** fix release verion ([#89](https://github.com/linrongbin16/ci-template.nvim/issues/89)) ([4dc98df](https://github.com/linrongbin16/ci-template.nvim/commit/4dc98df94865106b6523e033598f34350e2c6dfb))
+
 ## [8.0.0](https://github.com/linrongbin16/ci-template.nvim/compare/v7.0.0...v8.0.0) (2024-03-09)
 
 
